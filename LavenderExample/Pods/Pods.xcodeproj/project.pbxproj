@@ -1,0 +1,817 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02BCB4EBF5ECC5C3A264AA72C35EC72A /* UIImageView+Lavender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEF3A6443756206D87050932AF294EF /* UIImageView+Lavender.swift */; };
+		04D5AD79280D031B6697FF9A1175CD29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		107608B5C76BBA13B18B9819ED087213 /* LavenderBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96185DB5CAE6AE4D7243F6AF00800018 /* LavenderBundle.swift */; };
+		1BB5C960D16324CC0613E4D13348D35F /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 498D43060FF7970742EE41890A086566 /* test.jpg */; };
+		1F6C4F0031DF9FF9758CA683DC536702 /* LavenderAuthUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D2562440A60449AAA1D84425EECA2 /* LavenderAuthUserViewController.swift */; };
+		22ADAA7840A8AB745B0FB1846A52E70B /* String+Lavender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D62A40E11DB4332FD4FC67D18E0D72 /* String+Lavender.swift */; };
+		3613D82AE5CE6AECFE6BF7C6F3A77AF7 /* LavenderConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED38C14F634792569E7913F1CDC04F18 /* LavenderConst.swift */; };
+		39C8F698A4FC0E1103DDD60551273CD2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46576104A3C09B5271BA10C84F3F1671 /* Images.xcassets */; };
+		5C24B8B6EF31A0794584EAE2E5F43EE9 /* LianzaiButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66110E07A51E5720AC70F66F4966E78 /* LianzaiButton.swift */; };
+		6BB8B89556053D3EF41623018D8360CD /* UIImage+Lavender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841ECAFD7F9A003798F8CA8ECA3878BE /* UIImage+Lavender.swift */; };
+		81F6CB71C3BD4F530938EB66844E20BA /* Lavender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D1C5F79671A9AECFB4A26A446B3BCE /* Lavender.swift */; };
+		9176B6339CA62006AE5CFA968688C743 /* Pods-LavenderExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FFF541F272F1861475B8C45AA9E3E84 /* Pods-LavenderExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1C466B51918079E55A3B893F27360A8 /* LavenderAuthBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1059E47021FBA2562CD6A05E755F58AA /* LavenderAuthBaseViewController.swift */; };
+		A5F16FAA9461263406B7E0C8326DC66D /* Lavender-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 927048C6EB172249A6DA97B1DC217E7F /* Lavender-dummy.m */; };
+		BE1673E196B945A5EC70B386C91541E5 /* Lavender-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA4F1E240E5939581A0C2555AE1F0A35 /* Lavender-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C59469722AA1F21EF776FC9A599F2A3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		CA9ED73B9669052CC6BB327A40904861 /* LavenderAuthHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A212DC1CDA99B6553094E53DFBAB98 /* LavenderAuthHomeViewController.swift */; };
+		D4FFB852964B023EC5147B4B5D18E89E /* LavenderUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FB3204FD18432846A34B32C4044ECC /* LavenderUtil.swift */; };
+		D9A6093D40A2229BFAB6A94313366589 /* Pods-LavenderExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D57B2E6D6A37DBED7F94EF5ED90AE6F5 /* Pods-LavenderExample-dummy.m */; };
+		E54EF1DEF60EB9D9ABDA243B8D7B5A2F /* com.xiaoxiangyeyu.haycinth.Lavender.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CCF26AE333715B8ADE844CD6DA82B763 /* com.xiaoxiangyeyu.haycinth.Lavender.bundle */; };
+		EB7108592E3678A62BF53EB699E8D668 /* LianzaiButton.xib in Sources */ = {isa = PBXBuildFile; fileRef = DDEC4296525975E68796A7D662382060 /* LianzaiButton.xib */; };
+		EC15A394B6F1A0CDEA18B4907A24824B /* UIView+Lavender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A8DC13EE1EDD1C8BEF902E39308E2C /* UIView+Lavender.swift */; };
+		F605F94FAC9658422EEE96BAA7B30D80 /* UIButton+Lavender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E57AD60973CBEEF629E094ED81324F3 /* UIButton+Lavender.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADBF396449E132E18A21E9924EDFD7B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A794597A845DE36221CC85A4DA2B76F;
+			remoteInfo = "Lavender-com.xiaoxiangyeyu.haycinth.Lavender";
+		};
+		F9D3249583D9BDCD70C02321AC5D0C72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A6D080DB5B6EACF3C892E5C90787C8A;
+			remoteInfo = Lavender;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08BB86BDCC24F48FBEE5CFB807EAECD3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1059E47021FBA2562CD6A05E755F58AA /* LavenderAuthBaseViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderAuthBaseViewController.swift; sourceTree = "<group>"; };
+		260C66985DF7B3EA28B6F630EF886F85 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		34D62A40E11DB4332FD4FC67D18E0D72 /* String+Lavender.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Lavender.swift"; sourceTree = "<group>"; };
+		36FB3204FD18432846A34B32C4044ECC /* LavenderUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LavenderUtil.swift; path = Lavender/Classes/LavenderUtil.swift; sourceTree = "<group>"; };
+		46576104A3C09B5271BA10C84F3F1671 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Lavender/Assets/Images.xcassets; sourceTree = "<group>"; };
+		4856711FB404A5FCFE12AF870212E129 /* Lavender.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Lavender.xcconfig; sourceTree = "<group>"; };
+		498D43060FF7970742EE41890A086566 /* test.jpg */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.jpeg; name = test.jpg; path = Lavender/Assets/test.jpg; sourceTree = "<group>"; };
+		580ABF87E07C42BBC945C4B77418F601 /* Lavender.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Lavender.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		58A8DC13EE1EDD1C8BEF902E39308E2C /* UIView+Lavender.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Lavender.swift"; sourceTree = "<group>"; };
+		5C5D2562440A60449AAA1D84425EECA2 /* LavenderAuthUserViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderAuthUserViewController.swift; sourceTree = "<group>"; };
+		5FEF3A6443756206D87050932AF294EF /* UIImageView+Lavender.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImageView+Lavender.swift"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		66698C5447A2A89DE612DB23E6EFEEB3 /* Lavender.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Lavender.modulemap; sourceTree = "<group>"; };
+		69EE568DBBDB5E945F70B039A875344F /* Pods-LavenderExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LavenderExample.release.xcconfig"; sourceTree = "<group>"; };
+		6A29763C5D207342624908D5395CE0B6 /* ResourceBundle-com.xiaoxiangyeyu.haycinth.Lavender-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-com.xiaoxiangyeyu.haycinth.Lavender-Info.plist"; sourceTree = "<group>"; };
+		6FFF541F272F1861475B8C45AA9E3E84 /* Pods-LavenderExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LavenderExample-umbrella.h"; sourceTree = "<group>"; };
+		72109C485B505E5BBB1A867941423B95 /* Pods-LavenderExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LavenderExample.debug.xcconfig"; sourceTree = "<group>"; };
+		72D1C5F79671A9AECFB4A26A446B3BCE /* Lavender.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Lavender.swift; path = Lavender/Classes/Lavender.swift; sourceTree = "<group>"; };
+		83DAEC97EE85FC4F892194155E9CA5AD /* Lavender-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Lavender-prefix.pch"; sourceTree = "<group>"; };
+		841ECAFD7F9A003798F8CA8ECA3878BE /* UIImage+Lavender.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Lavender.swift"; sourceTree = "<group>"; };
+		927048C6EB172249A6DA97B1DC217E7F /* Lavender-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Lavender-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96185DB5CAE6AE4D7243F6AF00800018 /* LavenderBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LavenderBundle.swift; path = Lavender/Classes/LavenderBundle.swift; sourceTree = "<group>"; };
+		994EB688E9FAC787BBAC5F231256482E /* Pods-LavenderExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LavenderExample.modulemap"; sourceTree = "<group>"; };
+		9CD02CA48368C4B5F3BE1D8E78FF63B6 /* Pods-LavenderExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LavenderExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9E57AD60973CBEEF629E094ED81324F3 /* UIButton+Lavender.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIButton+Lavender.swift"; sourceTree = "<group>"; };
+		A66110E07A51E5720AC70F66F4966E78 /* LianzaiButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LianzaiButton.swift; sourceTree = "<group>"; };
+		B8F2F0F8BCD6BC120E74C36DD9835FA3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C629A8969FE1A23A4DA2D7F7C6848D3C /* Pods-LavenderExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LavenderExample-frameworks.sh"; sourceTree = "<group>"; };
+		CCF26AE333715B8ADE844CD6DA82B763 /* com.xiaoxiangyeyu.haycinth.Lavender.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.xiaoxiangyeyu.haycinth.Lavender.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD67F8D9425B8744CEC5D355D01ED8E2 /* Pods-LavenderExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LavenderExample-resources.sh"; sourceTree = "<group>"; };
+		D395457FE2E6D8A8587A47DF7F54A717 /* Pods_LavenderExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LavenderExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D57B2E6D6A37DBED7F94EF5ED90AE6F5 /* Pods-LavenderExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LavenderExample-dummy.m"; sourceTree = "<group>"; };
+		D8A212DC1CDA99B6553094E53DFBAB98 /* LavenderAuthHomeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderAuthHomeViewController.swift; sourceTree = "<group>"; };
+		DDEC4296525975E68796A7D662382060 /* LianzaiButton.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LianzaiButton.xib; sourceTree = "<group>"; };
+		E84DCD6910FF414CBB8D5B10487DBD7D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA4F1E240E5939581A0C2555AE1F0A35 /* Lavender-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Lavender-umbrella.h"; sourceTree = "<group>"; };
+		ED38C14F634792569E7913F1CDC04F18 /* LavenderConst.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LavenderConst.swift; path = Lavender/Classes/LavenderConst.swift; sourceTree = "<group>"; };
+		F06B65555315B677795A269B9B248675 /* Lavender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Lavender.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9F311E2E07FE46FE4748B0C18A0F3E7 /* Pods-LavenderExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LavenderExample-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FC4CD81374AA4EFD8D08C6DC741F79C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F481F86953DDB73910F53F768FCF955 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C59469722AA1F21EF776FC9A599F2A3B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD56B88A660D3FC2EC38F4CA8D9B7941 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D5AD79280D031B6697FF9A1175CD29 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20C0FC5D20C50FF2007E5483 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TextField;
+			path = Lavender/Classes/TextField;
+			sourceTree = "<group>";
+		};
+		20C0FC5E20C50FF2007E5483 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TextView;
+			path = Lavender/Classes/TextView;
+			sourceTree = "<group>";
+		};
+		20C0FC5F20C50FF2007E5483 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ImageView;
+			path = Lavender/Classes/ImageView;
+			sourceTree = "<group>";
+		};
+		24CF8820565226DB2498E97943988063 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C0B6D3EC4E77BEE377327CF9E6841BB /* Pods-LavenderExample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2C0B6D3EC4E77BEE377327CF9E6841BB /* Pods-LavenderExample */ = {
+			isa = PBXGroup;
+			children = (
+				08BB86BDCC24F48FBEE5CFB807EAECD3 /* Info.plist */,
+				994EB688E9FAC787BBAC5F231256482E /* Pods-LavenderExample.modulemap */,
+				9CD02CA48368C4B5F3BE1D8E78FF63B6 /* Pods-LavenderExample-acknowledgements.markdown */,
+				F9F311E2E07FE46FE4748B0C18A0F3E7 /* Pods-LavenderExample-acknowledgements.plist */,
+				D57B2E6D6A37DBED7F94EF5ED90AE6F5 /* Pods-LavenderExample-dummy.m */,
+				C629A8969FE1A23A4DA2D7F7C6848D3C /* Pods-LavenderExample-frameworks.sh */,
+				CD67F8D9425B8744CEC5D355D01ED8E2 /* Pods-LavenderExample-resources.sh */,
+				6FFF541F272F1861475B8C45AA9E3E84 /* Pods-LavenderExample-umbrella.h */,
+				72109C485B505E5BBB1A867941423B95 /* Pods-LavenderExample.debug.xcconfig */,
+				69EE568DBBDB5E945F70B039A875344F /* Pods-LavenderExample.release.xcconfig */,
+			);
+			name = "Pods-LavenderExample";
+			path = "Target Support Files/Pods-LavenderExample";
+			sourceTree = "<group>";
+		};
+		5194B9419988C3709848195BC2968AA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCF26AE333715B8ADE844CD6DA82B763 /* com.xiaoxiangyeyu.haycinth.Lavender.bundle */,
+				F06B65555315B677795A269B9B248675 /* Lavender.framework */,
+				D395457FE2E6D8A8587A47DF7F54A717 /* Pods_LavenderExample.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B841D2523806016A9DEA9CE922D1160 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				A66110E07A51E5720AC70F66F4966E78 /* LianzaiButton.swift */,
+				DDEC4296525975E68796A7D662382060 /* LianzaiButton.xib */,
+			);
+			name = Button;
+			path = Lavender/Classes/Button;
+			sourceTree = "<group>";
+		};
+		6E126EE2771999820EECFFFE5C69B476 /* AuthModule */ = {
+			isa = PBXGroup;
+			children = (
+				1059E47021FBA2562CD6A05E755F58AA /* LavenderAuthBaseViewController.swift */,
+				D8A212DC1CDA99B6553094E53DFBAB98 /* LavenderAuthHomeViewController.swift */,
+				5C5D2562440A60449AAA1D84425EECA2 /* LavenderAuthUserViewController.swift */,
+			);
+			name = AuthModule;
+			path = Lavender/Classes/AuthModule;
+			sourceTree = "<group>";
+		};
+		6F3110353407C56503C235FB4A1B697A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				46576104A3C09B5271BA10C84F3F1671 /* Images.xcassets */,
+				498D43060FF7970742EE41890A086566 /* test.jpg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				EBC9AE5B570C8E2E6BF4EFABB80C269D /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				5194B9419988C3709848195BC2968AA0 /* Products */,
+				24CF8820565226DB2498E97943988063 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9C8D621101541002948D4AF6F8E6019A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				580ABF87E07C42BBC945C4B77418F601 /* Lavender.podspec */,
+				260C66985DF7B3EA28B6F630EF886F85 /* LICENSE */,
+				B8F2F0F8BCD6BC120E74C36DD9835FA3 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		B262AA3663900943102AFBE0AB75CC70 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E84DCD6910FF414CBB8D5B10487DBD7D /* Info.plist */,
+				66698C5447A2A89DE612DB23E6EFEEB3 /* Lavender.modulemap */,
+				4856711FB404A5FCFE12AF870212E129 /* Lavender.xcconfig */,
+				927048C6EB172249A6DA97B1DC217E7F /* Lavender-dummy.m */,
+				83DAEC97EE85FC4F892194155E9CA5AD /* Lavender-prefix.pch */,
+				EA4F1E240E5939581A0C2555AE1F0A35 /* Lavender-umbrella.h */,
+				6A29763C5D207342624908D5395CE0B6 /* ResourceBundle-com.xiaoxiangyeyu.haycinth.Lavender-Info.plist */,
+			);
+			name = "Support Files";
+			path = "LavenderExample/Pods/Target Support Files/Lavender";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EA58F19CDE4C155508C9AC138734C19E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				34D62A40E11DB4332FD4FC67D18E0D72 /* String+Lavender.swift */,
+				9E57AD60973CBEEF629E094ED81324F3 /* UIButton+Lavender.swift */,
+				841ECAFD7F9A003798F8CA8ECA3878BE /* UIImage+Lavender.swift */,
+				5FEF3A6443756206D87050932AF294EF /* UIImageView+Lavender.swift */,
+				58A8DC13EE1EDD1C8BEF902E39308E2C /* UIView+Lavender.swift */,
+			);
+			name = Extension;
+			path = Lavender/Classes/Extension;
+			sourceTree = "<group>";
+		};
+		EBC9AE5B570C8E2E6BF4EFABB80C269D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE5DF9AAF49A49CF0448A43600C3B13B /* Lavender */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		EE5DF9AAF49A49CF0448A43600C3B13B /* Lavender */ = {
+			isa = PBXGroup;
+			children = (
+				72D1C5F79671A9AECFB4A26A446B3BCE /* Lavender.swift */,
+				96185DB5CAE6AE4D7243F6AF00800018 /* LavenderBundle.swift */,
+				ED38C14F634792569E7913F1CDC04F18 /* LavenderConst.swift */,
+				36FB3204FD18432846A34B32C4044ECC /* LavenderUtil.swift */,
+				20C0FC5F20C50FF2007E5483 /* ImageView */,
+				20C0FC5D20C50FF2007E5483 /* TextField */,
+				20C0FC5E20C50FF2007E5483 /* TextView */,
+				6E126EE2771999820EECFFFE5C69B476 /* AuthModule */,
+				6B841D2523806016A9DEA9CE922D1160 /* Button */,
+				EA58F19CDE4C155508C9AC138734C19E /* Extension */,
+				9C8D621101541002948D4AF6F8E6019A /* Pod */,
+				6F3110353407C56503C235FB4A1B697A /* Resources */,
+				B262AA3663900943102AFBE0AB75CC70 /* Support Files */,
+			);
+			name = Lavender;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1F34CEFB6A8F86B16378F31BEEA9E6A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1673E196B945A5EC70B386C91541E5 /* Lavender-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		439FD5215DD9627AC744BCD3143396BE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9176B6339CA62006AE5CFA968688C743 /* Pods-LavenderExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		105B43C569A2055B05F5807179D09280 /* Pods-LavenderExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DE0B865945F88298AB9168B059480F3 /* Build configuration list for PBXNativeTarget "Pods-LavenderExample" */;
+			buildPhases = (
+				5CE9720BB47C53FF04B55C5D1CA0E8A8 /* Sources */,
+				FD56B88A660D3FC2EC38F4CA8D9B7941 /* Frameworks */,
+				439FD5215DD9627AC744BCD3143396BE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98EFA66A0A3BCB89BF7A02FADA3B4AAF /* PBXTargetDependency */,
+			);
+			name = "Pods-LavenderExample";
+			productName = "Pods-LavenderExample";
+			productReference = D395457FE2E6D8A8587A47DF7F54A717 /* Pods_LavenderExample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3A6D080DB5B6EACF3C892E5C90787C8A /* Lavender */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6380BEF7007DC352D23FA9A99046F5CE /* Build configuration list for PBXNativeTarget "Lavender" */;
+			buildPhases = (
+				6C4013E6E363E25E930FD29C6D592456 /* Sources */,
+				5F481F86953DDB73910F53F768FCF955 /* Frameworks */,
+				D46620785F3D393ED7E44440CA70CC26 /* Resources */,
+				1F34CEFB6A8F86B16378F31BEEA9E6A5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72CB680D86FD4CC55D84CA225E16DB65 /* PBXTargetDependency */,
+			);
+			name = Lavender;
+			productName = Lavender;
+			productReference = F06B65555315B677795A269B9B248675 /* Lavender.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9A794597A845DE36221CC85A4DA2B76F /* Lavender-com.xiaoxiangyeyu.haycinth.Lavender */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BE12848098F398A2FF81F0D482A2712 /* Build configuration list for PBXNativeTarget "Lavender-com.xiaoxiangyeyu.haycinth.Lavender" */;
+			buildPhases = (
+				19C9DC2803E6710B2C338E0D8104E496 /* Sources */,
+				1FC4CD81374AA4EFD8D08C6DC741F79C /* Frameworks */,
+				BBF4C643EB444F760E873E91CE55071C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lavender-com.xiaoxiangyeyu.haycinth.Lavender";
+			productName = "Lavender-com.xiaoxiangyeyu.haycinth.Lavender";
+			productReference = CCF26AE333715B8ADE844CD6DA82B763 /* com.xiaoxiangyeyu.haycinth.Lavender.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 5194B9419988C3709848195BC2968AA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A6D080DB5B6EACF3C892E5C90787C8A /* Lavender */,
+				9A794597A845DE36221CC85A4DA2B76F /* Lavender-com.xiaoxiangyeyu.haycinth.Lavender */,
+				105B43C569A2055B05F5807179D09280 /* Pods-LavenderExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBF4C643EB444F760E873E91CE55071C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C8F698A4FC0E1103DDD60551273CD2 /* Images.xcassets in Resources */,
+				1BB5C960D16324CC0613E4D13348D35F /* test.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46620785F3D393ED7E44440CA70CC26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E54EF1DEF60EB9D9ABDA243B8D7B5A2F /* com.xiaoxiangyeyu.haycinth.Lavender.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19C9DC2803E6710B2C338E0D8104E496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CE9720BB47C53FF04B55C5D1CA0E8A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9A6093D40A2229BFAB6A94313366589 /* Pods-LavenderExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C4013E6E363E25E930FD29C6D592456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F16FAA9461263406B7E0C8326DC66D /* Lavender-dummy.m in Sources */,
+				81F6CB71C3BD4F530938EB66844E20BA /* Lavender.swift in Sources */,
+				A1C466B51918079E55A3B893F27360A8 /* LavenderAuthBaseViewController.swift in Sources */,
+				CA9ED73B9669052CC6BB327A40904861 /* LavenderAuthHomeViewController.swift in Sources */,
+				1F6C4F0031DF9FF9758CA683DC536702 /* LavenderAuthUserViewController.swift in Sources */,
+				107608B5C76BBA13B18B9819ED087213 /* LavenderBundle.swift in Sources */,
+				3613D82AE5CE6AECFE6BF7C6F3A77AF7 /* LavenderConst.swift in Sources */,
+				D4FFB852964B023EC5147B4B5D18E89E /* LavenderUtil.swift in Sources */,
+				5C24B8B6EF31A0794584EAE2E5F43EE9 /* LianzaiButton.swift in Sources */,
+				EB7108592E3678A62BF53EB699E8D668 /* LianzaiButton.xib in Sources */,
+				22ADAA7840A8AB745B0FB1846A52E70B /* String+Lavender.swift in Sources */,
+				F605F94FAC9658422EEE96BAA7B30D80 /* UIButton+Lavender.swift in Sources */,
+				6BB8B89556053D3EF41623018D8360CD /* UIImage+Lavender.swift in Sources */,
+				02BCB4EBF5ECC5C3A264AA72C35EC72A /* UIImageView+Lavender.swift in Sources */,
+				EC15A394B6F1A0CDEA18B4907A24824B /* UIView+Lavender.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72CB680D86FD4CC55D84CA225E16DB65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Lavender-com.xiaoxiangyeyu.haycinth.Lavender";
+			target = 9A794597A845DE36221CC85A4DA2B76F /* Lavender-com.xiaoxiangyeyu.haycinth.Lavender */;
+			targetProxy = ADBF396449E132E18A21E9924EDFD7B3 /* PBXContainerItemProxy */;
+		};
+		98EFA66A0A3BCB89BF7A02FADA3B4AAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Lavender;
+			target = 3A6D080DB5B6EACF3C892E5C90787C8A /* Lavender */;
+			targetProxy = F9D3249583D9BDCD70C02321AC5D0C72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		26D76BCCF55D92B3A64368FD81D01FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69EE568DBBDB5E945F70B039A875344F /* Pods-LavenderExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LavenderExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LavenderExample/Pods-LavenderExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7FB3F23CC458FEA9E08939B9BB808DDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4856711FB404A5FCFE12AF870212E129 /* Lavender.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Lavender/Lavender-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Lavender/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Lavender/Lavender.modulemap";
+				PRODUCT_MODULE_NAME = Lavender;
+				PRODUCT_NAME = Lavender;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		81E718CB18B1070E366112214BD8BBC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72109C485B505E5BBB1A867941423B95 /* Pods-LavenderExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LavenderExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LavenderExample/Pods-LavenderExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8586BBD4A807366CC83325D3EA154D75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4856711FB404A5FCFE12AF870212E129 /* Lavender.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Lavender";
+				INFOPLIST_FILE = "Target Support Files/Lavender/ResourceBundle-com.xiaoxiangyeyu.haycinth.Lavender-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = com.xiaoxiangyeyu.haycinth.Lavender;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		D8CA6935A6E3484C72EF4042F572D40B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4856711FB404A5FCFE12AF870212E129 /* Lavender.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Lavender/Lavender-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Lavender/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Lavender/Lavender.modulemap";
+				PRODUCT_MODULE_NAME = Lavender;
+				PRODUCT_NAME = Lavender;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EC5B9EFA107B7BA3E25FB8C31064AAA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4856711FB404A5FCFE12AF870212E129 /* Lavender.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Lavender";
+				INFOPLIST_FILE = "Target Support Files/Lavender/ResourceBundle-com.xiaoxiangyeyu.haycinth.Lavender-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = com.xiaoxiangyeyu.haycinth.Lavender;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
+				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BE12848098F398A2FF81F0D482A2712 /* Build configuration list for PBXNativeTarget "Lavender-com.xiaoxiangyeyu.haycinth.Lavender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC5B9EFA107B7BA3E25FB8C31064AAA6 /* Debug */,
+				8586BBD4A807366CC83325D3EA154D75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6380BEF7007DC352D23FA9A99046F5CE /* Build configuration list for PBXNativeTarget "Lavender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FB3F23CC458FEA9E08939B9BB808DDA /* Debug */,
+				D8CA6935A6E3484C72EF4042F572D40B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DE0B865945F88298AB9168B059480F3 /* Build configuration list for PBXNativeTarget "Pods-LavenderExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81E718CB18B1070E366112214BD8BBC3 /* Debug */,
+				26D76BCCF55D92B3A64368FD81D01FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

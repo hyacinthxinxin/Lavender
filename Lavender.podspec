@@ -6,37 +6,32 @@
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
 
-Pod::Spec.new do |s|
-  s.name             = 'Lavender'
-  s.version          = '0.1.1'
-  s.summary          = 'Lavender is a Swift Kit to enhance iOS development.'
-
-  s.description      = <<-DESC
+Pod::Spec.new do |spec|
+  spec.name             = 'Lavender'
+  spec.version          = '0.1.1'
+  spec.summary          = 'Lavender is a Swift Kit to enhance iOS development.'
+  spec.description      = <<-DESC
                         Lavender is a Swift Kit to enhance iOS development
-                        * A custom ImageView of UIControl
+                        * extensions for String
+                        * extensions for UIView
                        DESC
+  spec.homepage         = 'https://github.com/hyacinthxinxin/Lavender'
+  spec.license          = { :type => 'MIT', :file => 'LICENSE' }
+  spec.author           = { 'hyacinthxinxin' => 'fanxin0202@163.com' }
+  spec.source           = { :git => 'https://github.com/hyacinthxinxin/Lavender.git', :tag => spec.version.to_s }
+  spec.ios.deployment_target = '9.0'
+  spec.requires_arc = true
+  spec.swift_version = '4.1'
+  spec.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.1' }
+  spec.source_files = 'Lavender/Classes/**/*'
+  spec.resource_bundles = {
+      'com.xiaoxiangyeyu.haycinth.Lavender' => ['Lavender/Assets/*.{png,jpg,bundle,xib,storyboard,xcassets}']
+  }
 
-  s.homepage         = 'https://github.com/hyacinthxinxin/Lavender'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'hyacinthxinxin' => 'fanxin0202@163.com' }
-  s.source           = { :git => 'https://github.com/hyacinthxinxin/Lavender.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-  s.ios.deployment_target = '9.0'
-  s.swift_version = '4.1'
-
-  s.source_files = 'Lavender/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'Lavender' => ['Lavender/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'Alamofire', '~> 4.7.2'
-  s.dependency 'SnapKit', '~> 4.0.0'
-  s.dependency 'SwiftyJSON', '~> 4.1.0'
-  s.dependency 'Kingfisher', '~> 4.8.0'
-  s.dependency 'SVProgressHUD', '~> 2.2.5'
+#spec.dependency 'Alamofire', '~> 4.7.2'
+#spec.dependency 'SnapKit', '~> 4.0.0'
+#spec.dependency 'SwiftyJSON', '~> 4.1.0'
+#spec.dependency 'Kingfisher', '~> 4.8.0'
+#spec.dependency 'SVProgressHUD', '~> 2.2.5'
 
 end

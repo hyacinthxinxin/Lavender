@@ -1,0 +1,16 @@
+PODS:
+  - Lavender (0.1.1)
+
+DEPENDENCIES:
+  - Lavender (from `../`)
+
+EXTERNAL SOURCES:
+  Lavender:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Lavender: d3ce68b35f14452d73c750629a9037abc3cbb884
+
+PODFILE CHECKSUM: 5e6e80a74862c01eec58c3faf8b7347d630cafee
+
+COCOAPODS: 1.5.3

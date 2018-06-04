@@ -1,0 +1,32 @@
+{
+  "name": "Lavender",
+  "version": "0.1.1",
+  "summary": "Lavender is a Swift Kit to enhance iOS development.",
+  "description": "Lavender is a Swift Kit to enhance iOS development\n* extensions for String\n* extensions for UIView",
+  "homepage": "https://github.com/hyacinthxinxin/Lavender",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "hyacinthxinxin": "fanxin0202@163.com"
+  },
+  "source": {
+    "git": "https://github.com/hyacinthxinxin/Lavender.git",
+    "tag": "0.1.1"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "requires_arc": true,
+  "swift_version": "4.1",
+  "pod_target_xcconfig": {
+    "SWIFT_VERSION": "4.1"
+  },
+  "source_files": "Lavender/Classes/**/*",
+  "resource_bundles": {
+    "com.xiaoxiangyeyu.haycinth.Lavender": [
+      "Lavender/Assets/*.{png,jpg,bundle,xib,storyboard,xcassets}"
+    ]
+  }
+}

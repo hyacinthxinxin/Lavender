@@ -1,6 +1,0 @@
-framework module Pods_Lavender_Example {
-  umbrella header "Pods-Lavender_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

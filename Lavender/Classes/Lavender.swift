@@ -19,5 +19,10 @@ public extension LavenderCompatible {
 
 extension UIView: LavenderCompatible { }
 extension String: LavenderCompatible { }
+extension UIImage: LavenderCompatible { }
 
-
+// MARK:- 自定义打印方法
+func logger<T>(_ message: T, file: String = #file, funcName: String = #function, lineNum: Int = #line) {
+    let fileName = (file as NSString).lastPathComponent
+    print("\(fileName):\(lineNum):(\(funcName))==>\(message)")
+}

@@ -20,6 +20,11 @@ it, simply add the following line to your Podfile:
 pod 'Lavender'
 ```
 
+```ruby
+# 本地使用
+pod 'Lavender', :path => '~/Developer/iOS/cocoapodsLib/Lavender'
+```
+
 ## Author
 
 hyacinthxinxin, fanxin0202@163.com
