@@ -28,6 +28,11 @@ class LVEAutoLayoutVLFViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "AutoLayout VLF"
+        let v = UIImage.image(with: UIColor.red, size: CGSize(width: 100, height: 200))
+        let iv = UIImageView(image: v)
+        iv.frame = CGRect(x: 100, y: 100, width: 100, height: 200)
+        view.addSubview(iv)
         /*
         let metrics = [
             "horizontalPadding": Metrics.padding,
@@ -109,9 +114,9 @@ H:|-horizontalPadding-[iconImageView(iconImageViewWidth)]-[appNameLabel]-[skipBu
             NSLayoutConstraint.deactivate(allConstraints)
             allConstraints.removeAll()
         }
-        print(view.layoutMargins)
+//        print(view.layoutMargins)
         let newInsets = view.safeAreaInsets
-        print(newInsets)
+//        print(newInsets)
         let leftMargin = newInsets.left > 0 ? newInsets.left : Metrics.padding
         let rightMargin = newInsets.right > 0 ? newInsets.right : Metrics.padding
         let topMargin = newInsets.top > 0 ? newInsets.top : Metrics.padding
@@ -123,7 +128,6 @@ H:|-horizontalPadding-[iconImageView(iconImageViewWidth)]-[appNameLabel]-[skipBu
             "bottomMargin": bottomMargin,
             "leftMargin": leftMargin,
             "rightMargin": rightMargin]
-
         let views: [String: Any] = [
             "iconImageView": iconImageView,
             "appNameLabel": appNameLabel,
@@ -132,7 +136,6 @@ H:|-horizontalPadding-[iconImageView(iconImageViewWidth)]-[appNameLabel]-[skipBu
             "welcomeLabel": welcomeLabel,
             "summaryLabel": summaryLabel,
             "pageControl": pageControl]
-
         let iconVerticalConstraints = NSLayoutConstraint.constraints(
             withVisualFormat: "V:|-topMargin-[iconImageView(30)]",
             metrics: metrics,
@@ -181,8 +184,23 @@ H:|-horizontalPadding-[iconImageView(iconImageViewWidth)]-[appNameLabel]-[skipBu
             metrics: metrics,
             views: views)
         allConstraints += summaryToPageVerticalConstraints
-
         NSLayoutConstraint.activate(allConstraints)
+    }
+
+}
+
+extension LVEAutoLayoutVLFViewController: LavenderNavigationTransitionCenterDataSource {
+
+    func navigationBarStyle() -> UIBarStyle {
+        return .black
+    }
+
+    func navigationBackgroundColor() -> UIColor {
+        return UIColor.red
+    }
+
+    func navigationBarTintColor() -> UIColor {
+        return UIColor.white
     }
 
 }

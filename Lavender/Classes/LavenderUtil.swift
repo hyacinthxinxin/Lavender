@@ -19,9 +19,13 @@ public struct LavenderUtil {
     ///   - file: 文件名
     ///   - funcName: 方法名
     ///   - lineNum: 行号
-    public static func logger<T>(_ message: T, file: String = #file, lineNum: Int = #line, funcName: String = #function) {
-        let fileName = (file as NSString).lastPathComponent
-        print("\(fileName):\(lineNum):(\(funcName))==>\(message)")
+    public static func logging<T>(_ object: T?, fileName: String = #file, lineNum: Int = #line, funcName: String = #function) {
+//        let fileName = (file as NSString).lastPathComponent
+//        print("\(fileName):\(lineNum):(\(funcName))==>\(message)")
+        #if DEBUG
+        guard let object = object else { return }
+        print("***** \(Date()) \(fileName.components(separatedBy: "/").last ?? "") (line: \(lineNum)) :: \(funcName) :: \(object)")
+        #endif
     }
 
     /// 延迟执行
@@ -43,7 +47,7 @@ public struct LavenderUtil {
     ///   - path: 链接
     ///   - param: 参数名称
     /// - Returns: 参数值
-    func getQueryStringParameter(path: String?, param: String) -> String? {
+    public static func getQueryStringParameter(path: String?, param: String) -> String? {
         guard let path = path, let url = URLComponents(string: path) else { return nil }
         return url.queryItems?.first(where: { $0.name == param })?.value
     }
@@ -55,7 +59,7 @@ public struct LavenderUtil {
     ///   - view: 当前的视图
     ///   - isWriteToSavedPhotosAlbum: 是否保存到系统相册
     /// - Returns: 截取的图片
-    func screenCapture(_ view: UIView? = nil, _ isWriteToSavedPhotosAlbum: Bool = false) -> UIImage? {
+    public static func screenCapture(_ view: UIView? = nil, _ isWriteToSavedPhotosAlbum: Bool = false) -> UIImage? {
         let captureView = (view ?? (UIApplication.shared.keyWindow ?? UIApplication.shared.windows.first))!
         UIGraphicsBeginImageContextWithOptions(captureView.frame.size, false, 0.0)
         captureView.layer.render(in: UIGraphicsGetCurrentContext()!)
@@ -63,6 +67,11 @@ public struct LavenderUtil {
         UIGraphicsEndImageContext()
         if isWriteToSavedPhotosAlbum { UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil) }
         return image
+    }
+
+    public static func isSystemChineseHans() -> Bool {
+        //zh-Hans-CN
+        return Locale.preferredLanguages.first(where: { $0.contains("zh-Hans")}) != nil
     }
 
 }

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		20C0FC3F20C4F01F007E5483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C0FC3E20C4F01F007E5483 /* AppDelegate.swift */; };
 		20C0FC4820C4F020007E5483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C0FC4720C4F020007E5483 /* Assets.xcassets */; };
-		20C0FC4B20C4F020007E5483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C0FC4920C4F020007E5483 /* LaunchScreen.storyboard */; };
 		20C0FC6320C5151E007E5483 /* LVETabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C0FC6220C5151E007E5483 /* LVETabBarController.swift */; };
 		20C0FC6520C51530007E5483 /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C0FC6420C51530007E5483 /* Root.storyboard */; };
 		20C0FC6920C515B9007E5483 /* LVEMainLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C0FC6820C515B9007E5483 /* LVEMainLoadingViewController.swift */; };
@@ -19,6 +18,11 @@
 		20C0FC7320C5198B007E5483 /* LVEAuthLayout.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C0FC7220C5198B007E5483 /* LVEAuthLayout.xcassets */; };
 		20C0FC7720C51A0A007E5483 /* LVEAutoLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C0FC7620C51A0A007E5483 /* LVEAutoLayout.storyboard */; };
 		20C0FC7920C51B91007E5483 /* LVEMainLoading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C0FC7820C51B91007E5483 /* LVEMainLoading.storyboard */; };
+		20C0FC7B20C51EE4007E5483 /* LVECategory.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20C0FC7A20C51EE4007E5483 /* LVECategory.plist */; };
+		20C0FC7D20C51FEB007E5483 /* LVEAutoLayoutAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C0FC7C20C51FEB007E5483 /* LVEAutoLayoutAnchorViewController.swift */; };
+		20C0FC8120C52858007E5483 /* LaunchImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C0FC8020C52858007E5483 /* LaunchImage.xcassets */; };
+		20C0FC8420C529DB007E5483 /* LVENavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C0FC8320C529DB007E5483 /* LVENavigationController.swift */; };
+		20C0FCEE20C76B5E007E5483 /* LavenderUploadImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C0FCED20C76B5E007E5483 /* LavenderUploadImageViewController.swift */; };
 		7E3B0C6C04C7EF68EF818A51 /* Pods_LavenderExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469119EC58060D0CEB54B49B /* Pods_LavenderExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +30,6 @@
 		20C0FC3B20C4F01F007E5483 /* LavenderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LavenderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C0FC3E20C4F01F007E5483 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20C0FC4720C4F020007E5483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		20C0FC4A20C4F020007E5483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20C0FC4C20C4F020007E5483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20C0FC6220C5151E007E5483 /* LVETabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVETabBarController.swift; sourceTree = "<group>"; };
 		20C0FC6420C51530007E5483 /* Root.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
@@ -37,6 +40,11 @@
 		20C0FC7220C5198B007E5483 /* LVEAuthLayout.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LVEAuthLayout.xcassets; sourceTree = "<group>"; };
 		20C0FC7620C51A0A007E5483 /* LVEAutoLayout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LVEAutoLayout.storyboard; sourceTree = "<group>"; };
 		20C0FC7820C51B91007E5483 /* LVEMainLoading.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LVEMainLoading.storyboard; sourceTree = "<group>"; };
+		20C0FC7A20C51EE4007E5483 /* LVECategory.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LVECategory.plist; sourceTree = "<group>"; };
+		20C0FC7C20C51FEB007E5483 /* LVEAutoLayoutAnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVEAutoLayoutAnchorViewController.swift; sourceTree = "<group>"; };
+		20C0FC8020C52858007E5483 /* LaunchImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LaunchImage.xcassets; sourceTree = "<group>"; };
+		20C0FC8320C529DB007E5483 /* LVENavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVENavigationController.swift; sourceTree = "<group>"; };
+		20C0FCED20C76B5E007E5483 /* LavenderUploadImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LavenderUploadImageViewController.swift; sourceTree = "<group>"; };
 		469119EC58060D0CEB54B49B /* Pods_LavenderExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LavenderExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2B2F16114386386C5B6590D /* Pods-LavenderExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LavenderExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LavenderExample/Pods-LavenderExample.debug.xcconfig"; sourceTree = "<group>"; };
 		DB33715A2591D4F1DEBB5E74 /* Pods-LavenderExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LavenderExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-LavenderExample/Pods-LavenderExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,12 +83,15 @@
 		20C0FC3D20C4F01F007E5483 /* LavenderExample */ = {
 			isa = PBXGroup;
 			children = (
+				20C0FCEC20C76B44007E5483 /* UploadImage */,
 				20C0FC3E20C4F01F007E5483 /* AppDelegate.swift */,
 				20C0FC4C20C4F020007E5483 /* Info.plist */,
 				20C0FC6120C51503007E5483 /* Root */,
 				20C0FC6020C514E1007E5483 /* AuthLayout */,
+				20C0FC7F20C527EA007E5483 /* Table */,
+				20C0FC7E20C527DB007E5483 /* Collection */,
 				20C0FC4720C4F020007E5483 /* Assets.xcassets */,
-				20C0FC4920C4F020007E5483 /* LaunchScreen.storyboard */,
+				20C0FC8020C52858007E5483 /* LaunchImage.xcassets */,
 			);
 			path = LavenderExample;
 			sourceTree = "<group>";
@@ -88,6 +99,7 @@
 		20C0FC6020C514E1007E5483 /* AuthLayout */ = {
 			isa = PBXGroup;
 			children = (
+				20C0FC7C20C51FEB007E5483 /* LVEAutoLayoutAnchorViewController.swift */,
 				20C0FC6E20C518AE007E5483 /* LVEAutoLayoutVLFViewController.swift */,
 				20C0FC7220C5198B007E5483 /* LVEAuthLayout.xcassets */,
 				20C0FC7620C51A0A007E5483 /* LVEAutoLayout.storyboard */,
@@ -100,12 +112,36 @@
 			children = (
 				20C0FC6420C51530007E5483 /* Root.storyboard */,
 				20C0FC6220C5151E007E5483 /* LVETabBarController.swift */,
+				20C0FC8320C529DB007E5483 /* LVENavigationController.swift */,
 				20C0FC7820C51B91007E5483 /* LVEMainLoading.storyboard */,
 				20C0FC6820C515B9007E5483 /* LVEMainLoadingViewController.swift */,
 				20C0FC6C20C516CF007E5483 /* LVECategory.storyboard */,
 				20C0FC6A20C516BC007E5483 /* LVECategoryTableViewController.swift */,
+				20C0FC7A20C51EE4007E5483 /* LVECategory.plist */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		20C0FC7E20C527DB007E5483 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		20C0FC7F20C527EA007E5483 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		20C0FCEC20C76B44007E5483 /* UploadImage */ = {
+			isa = PBXGroup;
+			children = (
+				20C0FCED20C76B5E007E5483 /* LavenderUploadImageViewController.swift */,
+			);
+			path = UploadImage;
 			sourceTree = "<group>";
 		};
 		D69F480E51E3CDDC629256F1 /* Pods */ = {
@@ -185,8 +221,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20C0FC7B20C51EE4007E5483 /* LVECategory.plist in Resources */,
 				20C0FC7720C51A0A007E5483 /* LVEAutoLayout.storyboard in Resources */,
-				20C0FC4B20C4F020007E5483 /* LaunchScreen.storyboard in Resources */,
+				20C0FC8120C52858007E5483 /* LaunchImage.xcassets in Resources */,
 				20C0FC7920C51B91007E5483 /* LVEMainLoading.storyboard in Resources */,
 				20C0FC4820C4F020007E5483 /* Assets.xcassets in Resources */,
 				20C0FC6520C51530007E5483 /* Root.storyboard in Resources */,
@@ -241,6 +278,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20C0FC8420C529DB007E5483 /* LVENavigationController.swift in Sources */,
+				20C0FC7D20C51FEB007E5483 /* LVEAutoLayoutAnchorViewController.swift in Sources */,
+				20C0FCEE20C76B5E007E5483 /* LavenderUploadImageViewController.swift in Sources */,
 				20C0FC3F20C4F01F007E5483 /* AppDelegate.swift in Sources */,
 				20C0FC6F20C518AF007E5483 /* LVEAutoLayoutVLFViewController.swift in Sources */,
 				20C0FC6320C5151E007E5483 /* LVETabBarController.swift in Sources */,
@@ -250,17 +290,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		20C0FC4920C4F020007E5483 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				20C0FC4A20C4F020007E5483 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		20C0FC4D20C4F020007E5483 /* Debug */ = {
@@ -382,6 +411,7 @@
 			baseConfigurationReference = A2B2F16114386386C5B6590D /* Pods-LavenderExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9YE7FFAQ8S;
 				INFOPLIST_FILE = LavenderExample/Info.plist;
@@ -402,6 +432,7 @@
 			baseConfigurationReference = DB33715A2591D4F1DEBB5E74 /* Pods-LavenderExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9YE7FFAQ8S;
 				INFOPLIST_FILE = LavenderExample/Info.plist;

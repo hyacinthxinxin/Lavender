@@ -10,6 +10,12 @@
 #endif
 #endif
 
+#import "UpApiUtils.h"
+#import "UpSimpleHttpClient.h"
+#import "UpYunBlockUpLoader.h"
+#import "UpYunFileDealManger.h"
+#import "UpYunFormUploader.h"
+#import "UpYunUploader.h"
 
 FOUNDATION_EXPORT double LavenderVersionNumber;
 FOUNDATION_EXPORT const unsigned char LavenderVersionString[];

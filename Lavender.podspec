@@ -23,11 +23,13 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   spec.swift_version = '4.1'
   spec.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.1' }
+#spec.source_files = ['Lavender/Classes/**/*', 'Lavender/Classes/UpYun/UpYunSDK/*.{h,m}']
   spec.source_files = 'Lavender/Classes/**/*'
   spec.resource_bundles = {
       'com.xiaoxiangyeyu.haycinth.Lavender' => ['Lavender/Assets/*.{png,jpg,bundle,xib,storyboard,xcassets}']
   }
 
+#  spec.dependency 'CryptoSwift', '~> 0.10.0'
 #spec.dependency 'Alamofire', '~> 4.7.2'
 #spec.dependency 'SnapKit', '~> 4.0.0'
 #spec.dependency 'SwiftyJSON', '~> 4.1.0'

@@ -14,6 +14,8 @@ class LVETabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
+        self.setupMainTabBarViewControllers()
+/*
         if let mainLoadingViewController = UIStoryboard(name: "LVEMainLoading", bundle: nil).instantiateInitialViewController() as? LVEMainLoadingViewController {
             setViewControllers([mainLoadingViewController], animated: true)
             LVU.delay(seconds: 1.2) { [weak self] in
@@ -22,11 +24,12 @@ class LVETabBarController: UITabBarController {
                 self.setupMainTabBarViewControllers()
             }
         }
+ */
     }
 
     fileprivate func setupMainTabBarViewControllers() {
-        guard let firstNavigationController = UIStoryboard(name: "LVECategory", bundle: nil).instantiateInitialViewController() as? UINavigationController else { return }
-        setViewControllers([firstNavigationController], animated: true)
+        guard let categoryTableViewController = UIStoryboard(name: "LVECategory", bundle: nil).instantiateInitialViewController() as? LVECategoryTableViewController else { return }
+        setViewControllers([LVENavigationController(rootViewController: categoryTableViewController)], animated: true)
     }
 
 }
