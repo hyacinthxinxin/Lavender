@@ -20,9 +20,8 @@ public struct LavenderLocaleStore {
     }
 
     public static func getInfo(completion: @escaping (FetchResults) -> ()) {
-        let bundle = Bundle(for: LavenderLocalePickerViewController.self)
-        let path = "Countries.bundle/Data/CountryCodes"
-        guard let jsonPath = bundle.path(forResource: path, ofType: "json"),
+        guard let bundle = LavenderBundle.resourceBundle,
+            let jsonPath = bundle.path(forResource: "Countries.bundle/Data/CountryCodes", ofType: "json"),
             let jsonData = try? Data(contentsOf: URL(fileURLWithPath: jsonPath)) else {
             return completion(FetchResults.error(error: (title: "ContryCodes Error", message: "No ContryCodes Bundle Access")))
         }

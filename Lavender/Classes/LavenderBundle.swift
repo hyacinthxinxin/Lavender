@@ -13,7 +13,7 @@ class LavenderBundle {
     }
 
     public static var resourceBundle: Bundle? {
-        return Bundle(path: frameworkBundle.bundlePath+"/Lavender.bundle")
+        return Bundle(path: frameworkBundle.bundlePath+"/com.xiaoxiangyeyu.haycinth.Lavender.bundle")
     }
 
 }

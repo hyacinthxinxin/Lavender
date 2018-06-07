@@ -20,11 +20,12 @@ public struct LavenderUtil {
     ///   - funcName: 方法名
     ///   - lineNum: 行号
     public static func logging<T>(_ object: T?, fileName: String = #file, lineNum: Int = #line, funcName: String = #function) {
-//        let fileName = (file as NSString).lastPathComponent
-//        print("\(fileName):\(lineNum):(\(funcName))==>\(message)")
         #if DEBUG
-        guard let object = object else { return }
-        print("***** \(Date()) \(fileName.components(separatedBy: "/").last ?? "") (line: \(lineNum)) :: \(funcName) :: \(object)")
+        if let object = object {
+            print("***** \(Date()) \(fileName.components(separatedBy: "/").last ?? "") (line: \(lineNum)) :: \(funcName) :: \(object)")
+        } else {
+            print("***** \(Date()) \(fileName.components(separatedBy: "/").last ?? "") (line: \(lineNum)) :: \(funcName) :: nil value")
+        }
         #endif
     }
 
