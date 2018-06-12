@@ -34,7 +34,8 @@ public class LavenderImagePickerAsset {
 
     public func requestThumbnailImage(targetSize: CGSize, resultHandler: @escaping (UIImage?, [AnyHashable : Any]?) -> Swift.Void) {
         let requestOptions = PHImageRequestOptions()
-        requestOptions.deliveryMode = .fastFormat
+        requestOptions.resizeMode = .fast
+//        requestOptions.deliveryMode = .fastFormat
         requestOptions.isNetworkAccessAllowed = true
         PHCachingImageManager.default().requestImage(for: asset, targetSize: targetSize, contentMode: .aspectFill, options: requestOptions) { image, info in
             resultHandler(image, info)
@@ -43,6 +44,7 @@ public class LavenderImagePickerAsset {
 
     public func requestPreviewImage(targetSize: CGSize, resultHandler: @escaping (UIImage?, [AnyHashable : Any]?) -> Swift.Void) {
         let requestOptions = PHImageRequestOptions()
+        requestOptions.resizeMode = .fast
         requestOptions.isNetworkAccessAllowed = true
         PHCachingImageManager.default().requestImage(for: asset, targetSize: targetSize, contentMode: .aspectFit, options: requestOptions) { image, info in
             resultHandler(image, info)
@@ -68,38 +70,49 @@ extension LavenderImagePickerListType {
 
 
 /// 选择的资源列表
-class LavenderImagePickerPickedAssetList: LavenderImagePickerListType {
+public class LavenderImagePickerPickedAssetList: LavenderImagePickerListType {
 
-    var assetList: [Item] = []
+    public var assetList: [Item] = []
 
-    weak var controller :LavenderImagePickerController?
+    public weak var controller :LavenderImagePickerController?
 
-    typealias Item = LavenderImagePickerAsset
+    public typealias Item = LavenderImagePickerAsset
 
-    var title: String {
+    public var title: String {
         return "Selected Assets"
     }
 
-    func update(_ handler:(() -> Void)?) {
+    public init() {}
+
+    public func update(_ handler:(() -> Void)?) {
         fatalError("not supported")
     }
 
-    subscript (index: Int) -> Item {
+    public subscript (index: Int) -> Item {
         return assetList[index]
     }
 
     // MARK: - CollectionType
 
-    var startIndex: Int {
+    public var startIndex: Int {
         return 0
     }
 
-    var endIndex: Int {
+    public var endIndex: Int {
         return assetList.count
     }
 
     func isPicked(_ asset: LavenderImagePickerAsset) -> Bool {
         return assetList.contains { $0.identifier == asset.identifier }
+    }
+
+    func isPickedWithIndex(_ asset: LavenderImagePickerAsset) -> (Bool, index: Int?) {
+        let index = assetList.index(where: { $0.identifier == asset.identifier })
+        if index != nil {
+            return (true, index: index!)
+        } else {
+            return (false, index: nil)
+        }
     }
 
     func pick(asset: LavenderImagePickerAsset) -> Bool {
@@ -109,41 +122,39 @@ class LavenderImagePickerPickedAssetList: LavenderImagePickerListType {
             return false
         }
         assetList.append(asset)
-        for asset in assetList {
-            LVU.logging(asset.identifier)
-        }
-        LVU.logging(asset.identifier)
-        LVU.logging(assetList.index(where: { $0.identifier == asset.identifier }))
         let assetsCountAfterPicking = self.count
-        NotificationCenter.default.post(
-            Notification(
-                name: NotificationInfo.Asset.PhotoKit.didPick,
-                object: nil,
-                userInfo: [
-                    NotificationInfo.Asset.PhotoKit.didPickUserInfoKeyAsset: asset.originalAsset,
-                    NotificationInfo.Asset.PhotoKit.didPickUserInfoKeyPickedAssetsCount: assetsCountAfterPicking
-                ]
-            )
-        )
+        NotificationCenter.default.post(name: NotificationInfo.Asset.PhotoKit.didPick, object: nil, userInfo: [
+            NotificationInfo.Asset.PhotoKit.didPickUserInfoKeyAsset: asset.originalAsset,
+            NotificationInfo.Asset.PhotoKit.didPickUserInfoKeyPickedAssetsCount: assetsCountAfterPicking
+            ])
         return true
     }
 
     func drop(asset: LavenderImagePickerAsset) -> Bool {
 //        let assetsCountBeforeDropping = self.count
-        LVU.logging(assetList.index(where: { $0.identifier == asset.identifier }))
+//        LVU.logging(assetList.index(where: { $0.identifier == asset.identifier }))
         assetList = assetList.filter { $0.identifier != asset.identifier }
         let assetsCountAfterDropping = self.count
-        NotificationCenter.default.post(
-            Notification(
-                name: NotificationInfo.Asset.PhotoKit.didDrop,
-                object: nil,
-                userInfo: [
-                    NotificationInfo.Asset.PhotoKit.didDropUserInfoKeyAsset : asset.originalAsset,
-                    NotificationInfo.Asset.PhotoKit.didDropUserInfoKeyPickedAssetsCount : assetsCountAfterDropping
-                ]
-            )
-        )
+        NotificationCenter.default.post(name: NotificationInfo.Asset.PhotoKit.didDrop, object: nil, userInfo: [
+            NotificationInfo.Asset.PhotoKit.didDropUserInfoKeyAsset : asset.originalAsset,
+            NotificationInfo.Asset.PhotoKit.didDropUserInfoKeyPickedAssetsCount : assetsCountAfterDropping
+            ])
         return true
+    }
+
+    public func resolveAssets(_ size: CGSize = CGSize(width: 720, height: 1280)) -> [UIImage] {
+        let imageManager = PHImageManager.default()
+        let requestOptions = PHImageRequestOptions()
+        requestOptions.isSynchronous = true
+        var images = [UIImage]()
+        for asset in assetList {
+            imageManager.requestImage(for: asset.originalAsset, targetSize: size, contentMode: .aspectFill, options: requestOptions) { image, _ in
+                if let image = image {
+                    images.append(image)
+                }
+            }
+        }
+        return images
     }
 
 }

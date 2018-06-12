@@ -10,13 +10,7 @@ import Photos
 
 class LavenderImagePickerAlbumViewController: UIViewController {
 
-    weak public var imagePickerDelegate: LavenderImagePickerControllerDelegate?
-
-    weak var controller :LavenderImagePickerController?
-
     var albumList: LavenderImagePickerAlbumList?
-
-//    var assetCollections = [PHAssetCollection]()
 
     lazy var tableView: UITableView = {
         $0.translatesAutoresizingMaskIntoConstraints = false
@@ -37,7 +31,8 @@ class LavenderImagePickerAlbumViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.cyan
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "取消", style: .plain, target: self, action: #selector(cancel))
+        guard let imagePickerController = self.imagePickerController else { return }
+        prepareNavigationItems()
         tableView.register(LavenderImagePickerAlbumCell.self, forCellReuseIdentifier: LavenderImagePickerAlbumCell.reuseIdentifier)
         view.addSubview(tableView)
         NSLayoutConstraint.activate([
@@ -46,23 +41,35 @@ class LavenderImagePickerAlbumViewController: UIViewController {
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
             ])
-//        DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-//            guard let `self` = self else { return }
-//            let smartAlbums = PHAssetCollection.fetchAssetCollections(with: .smartAlbum, subtype: .albumRegular, options: nil)
-//            smartAlbums.enumerateObjects({ (collection, _, _) in
-//                self.assetCollections.append(collection)
-//            })
-//            DispatchQueue.main.async {
-//                self.tableView.reloadData()
-//            }
-//        }
+        albumList = LavenderImagePickerAlbumList(
+                assetCollectionTypes: imagePickerController.assetCollectionTypes,
+                assetCollectionSubtypes: imagePickerController.assetCollectionSubtypes,
+                mediaType: imagePickerController.mediaType,
+                shouldShowEmptyAlbum: imagePickerController.shouldShowEmptyAlbum,
+                handler: { [weak self] in
+                    DispatchQueue.main.async {
+                        self?.tableView.reloadData()
+                        guard imagePickerController.sourceType == .savedPhotosAlbum else { return }
+                        if let assetList = self?.albumList?.first(where: { $0.assetList.assetCollectionSubtype == PHAssetCollectionSubtype.smartAlbumUserLibrary }) {
+                            self?.showImagePickerThumbnailViewController(with: assetList)
+                        }
+                    }
+            })
+    }
+
+    fileprivate func prepareNavigationItems() {
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "取消", style: .plain, target: self, action: #selector(cancel))
+    }
+
+    fileprivate func showImagePickerThumbnailViewController(with ablum: LavenderImagePickerAssetList) {
+        let imagePickerThumbnailViewController = LavenderImagePickerThumbnailViewController(nibName: nil, bundle: nil)
+        imagePickerThumbnailViewController.assetList = ablum
+        navigationController?.pushViewController(imagePickerThumbnailViewController, animated: false)
     }
 
     @objc fileprivate func cancel() {
-        guard let imagePickerController = self.navigationController as? LavenderImagePickerController else {
-            return
-        }
-        imagePickerDelegate?.imagePickerControllerDidCancel(imagePickerController)
+        guard let imagePickerController = self.imagePickerController else { return }
+        imagePickerController.imagePickerDelegate?.imagePickerControllerDidCancel(imagePickerController)
     }
 
 }
@@ -95,29 +102,8 @@ extension LavenderImagePickerAlbumViewController: UITableViewDataSource {
 extension LavenderImagePickerAlbumViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let assetCollection = assetCollections[indexPath.row]
-//        let option = PHFetchOptions()
-//        option.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
-//        option.predicate = NSPredicate(format: "mediaType == %ld", PHAssetMediaType.image.rawValue)
-//        let result = PHAsset.fetchAssets(in: assetCollection, options: option)
-//        var assets = [PHAsset]()
-//        DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-//            guard let `self` = self else { return }
-//            result.enumerateObjects({ (asset, _, _) in
-//                assets.append(asset)
-//            })
-//            DispatchQueue.main.async {
-//                let imagePickerThumbnailViewController = LavenderImagePickerThumbnailViewController(imagePickerDelegate: self.imagePickerDelegate)
-//                imagePickerThumbnailViewController.assets = assets
-//                self.navigationController?.pushViewController(imagePickerThumbnailViewController, animated: true)
-//                tableView.deselectRow(at: indexPath, animated: true)
-//            }
-//        }
-        let assetList = albumList?[indexPath.row]
-        let imagePickerThumbnailViewController = LavenderImagePickerThumbnailViewController(imagePickerDelegate: imagePickerDelegate)
-        imagePickerThumbnailViewController.controller = controller
-        imagePickerThumbnailViewController.assetList = assetList
-        navigationController?.pushViewController(imagePickerThumbnailViewController, animated: true)
+        guard let albumList = self.albumList else { return }
+        showImagePickerThumbnailViewController(with: albumList[indexPath.row])
         tableView.deselectRow(at: indexPath, animated: true)
     }
 

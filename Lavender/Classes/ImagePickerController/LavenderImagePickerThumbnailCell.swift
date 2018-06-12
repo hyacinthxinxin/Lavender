@@ -27,8 +27,8 @@ class LavenderImagePickerThumbnailCell: UICollectionViewCell {
 
     lazy var selectButton: UIButton = { [unowned self] in
         let button = UIButton(type: .custom)
-        button.setImage(LavenderImagePickerResource.thumbnailCellUnselectedImage, for: UIControlState())
-        button.setImage(LavenderImagePickerResource.thumbnailCellSelectedImage, for: .selected)
+        button.setBackgroundImage(LavenderImagePickerResource.thumbnailCellUnselectedImage, for: UIControlState())
+        button.setBackgroundImage(LavenderImagePickerResource.thumbnailCellSelectedImage, for: .selected)
         button.lv.setEnlargeEdge(top: 0, left: 20, bottom: 20, right: 0)
         return button
         }()

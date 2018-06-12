@@ -9,8 +9,35 @@
 import UIKit
 import Lavender
 import MobileCoreServices
+import Photos
 
 class LavenderUploadImageViewController: UIViewController {
+
+    var pickedAssetList: LavenderImagePickerPickedAssetList = LavenderImagePickerPickedAssetList()  {
+        willSet {
+            images = newValue.resolveAssets()
+        }
+    }
+
+    var images: [UIImage]? {
+        didSet {
+            if let images = self.images {
+                for image in images {
+                    LVU.logging(image)
+                }
+            }
+        }
+    }
+
+    var assets: [PHAsset] = [PHAsset]() {
+        didSet {
+            for asset in assets {
+                LVU.logging(asset.mediaType)
+                LVU.logging(asset.sourceType)
+
+            }
+        }
+    }
 
     lazy var selectSinglePhotoButton: UIButton = { [unowned self] in
         $0.translatesAutoresizingMaskIntoConstraints = false
@@ -59,8 +86,10 @@ class LavenderUploadImageViewController: UIViewController {
 
     @objc fileprivate func selectMultiplePhotos(_ sender: UIButton) {
         let imagePicker = LavenderImagePickerController()
+        pickedAssetList.controller = imagePicker
         imagePicker.sourceType = .savedPhotosAlbum
         imagePicker.delegate = self
+        imagePicker.pickedAssetList = self.pickedAssetList
         present(imagePicker, animated: true, completion: nil)
     }
 
@@ -91,8 +120,23 @@ extension LavenderUploadImageViewController: UINavigationControllerDelegate, UII
         picker.dismiss(animated: true, completion: nil)
     }
 
+    // MARK: - LavenderImagePickerControllerDelegate
+
     func imagePickerControllerDidCancel(_ picker: LavenderImagePickerController) {
         dismiss(animated: true, completion: nil)
     }
+
+    func imagePickerController(_ picker: LavenderImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        if let images = info[LavenderImagePickerControllerInfoKey.pickedImages] as? [UIImage] {
+            for image in images {
+                LVU.logging(image)
+            }
+        }
+        if let pickedAssetList = info[LavenderImagePickerControllerInfoKey.pickedAssetList] as? LavenderImagePickerPickedAssetList {
+            self.pickedAssetList = pickedAssetList
+        }
+    }
+
 }
 

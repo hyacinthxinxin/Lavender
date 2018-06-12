@@ -23,5 +23,3 @@
 typedef void (^UpLoaderSuccessBlock)(NSHTTPURLResponse *response, NSDictionary *responseBody);
 typedef void (^UpLoaderFailureBlock)(NSError *error, NSHTTPURLResponse *response, NSDictionary *responseBody);
 typedef void (^UpLoaderProgressBlock)(int64_t completedBytesCount, int64_t totalBytesCount);
-
-

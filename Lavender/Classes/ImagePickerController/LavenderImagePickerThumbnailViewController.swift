@@ -14,10 +14,6 @@ fileprivate let lineCount: Int = 4
 
 class LavenderImagePickerThumbnailViewController: UIViewController {
 
-    weak public var imagePickerDelegate: LavenderImagePickerControllerDelegate?
-
-    weak var controller :LavenderImagePickerController?
-
     var assetList: LavenderImagePickerAssetList?
 
     var notifications: [NSObjectProtocol?]?
@@ -43,11 +39,6 @@ class LavenderImagePickerThumbnailViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    convenience init(imagePickerDelegate: (LavenderImagePickerControllerDelegate & UINavigationControllerDelegate)?) {
-        self.init(nibName: nil, bundle: nil)
-        self.imagePickerDelegate = imagePickerDelegate
-    }
-
     lazy var collectionViewFlowLayout: UICollectionViewFlowLayout = {
         let collectionViewFlowLayout = UICollectionViewFlowLayout()
         collectionViewFlowLayout.sectionInset = UIEdgeInsets(top: cellPadding, left: cellPadding, bottom: cellPadding, right: cellPadding)
@@ -67,17 +58,34 @@ class LavenderImagePickerThumbnailViewController: UIViewController {
         return collectionView
         }()
 
+    lazy var toolbar: LavenderImagePickerThumbnailToolbar = {
+        $0.backgroundColor = UIColor.white
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        return $0
+    }(LavenderImagePickerThumbnailToolbar(frame: CGRect.zero))
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.brown
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "取消", style: .plain, target: self, action: #selector(cancel))
         collectionView.register(LavenderImagePickerThumbnailCell.self, forCellWithReuseIdentifier: LavenderImagePickerThumbnailCell.reuseIdentifier)
         view.addSubview(collectionView)
+        toolbar.controller = imagePickerController
+        view.addSubview(toolbar)
+
+        if #available(iOS 11.0, *) {
+            toolbar.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        } else {
+            toolbar.bottomAnchor.constraint(equalTo: bottomLayoutGuide.topAnchor).isActive = true
+        }
         NSLayoutConstraint.activate([
             collectionView.topAnchor.constraint(equalTo: view.topAnchor),
             collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            toolbar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            toolbar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: toolbar.topAnchor),
+            toolbar.heightAnchor.constraint(equalToConstant: 44)
             ])
         notifications = [
             NotificationCenter.default.addObserver(forName: NotificationInfo.Asset.PhotoKit.didPick, object: nil, queue: OperationQueue.main) { [weak self] (notification) in
@@ -93,10 +101,8 @@ class LavenderImagePickerThumbnailViewController: UIViewController {
     }
 
     @objc fileprivate func cancel() {
-        guard let imagePickerController = self.navigationController as? LavenderImagePickerController else {
-            return
-        }
-        imagePickerDelegate?.imagePickerControllerDidCancel(imagePickerController)
+        guard let imagePickerController = self.imagePickerController else { return }
+        imagePickerController.imagePickerDelegate?.imagePickerControllerDidCancel(imagePickerController)
     }
 
 }
@@ -112,15 +118,23 @@ extension LavenderImagePickerThumbnailViewController: UICollectionViewDataSource
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let controller = self.controller, let assetList = self.assetList else {
+        guard let imagePickerController = self.imagePickerController, let assetList = self.assetList else {
             return UICollectionViewCell()
         }
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LavenderImagePickerThumbnailCell.reuseIdentifier, for: indexPath) as! LavenderImagePickerThumbnailCell
         let asset = assetList[indexPath.item]
         cell.tag = indexPath.item
-        cell.selectButton.isSelected = controller.pickedAssetList.isPicked(asset)
+
+        let isPickedWithIndex = imagePickerController.pickedAssetList.isPickedWithIndex(asset)
+        if isPickedWithIndex.0 {
+            cell.selectButton.isSelected = true
+            cell.selectButton.setTitle("\(isPickedWithIndex.index!)", for: .selected)
+        } else {
+            cell.selectButton.isSelected = false
+        }
+//        cell.selectButton.isSelected = controller.pickedAssetList.isPicked(asset)
 //        self.overlayView.isHidden = !pickButton.isSelected
-        let targetSize = CGSize(width: collectionViewFlowLayout.itemSize.width * UIScreen.main.scale * 2, height: collectionViewFlowLayout.itemSize.height * UIScreen.main.scale * 2)
+        let targetSize = CGSize(width: collectionViewFlowLayout.itemSize.width * UIScreen.main.scale, height: collectionViewFlowLayout.itemSize.height * UIScreen.main.scale)
         asset.requestThumbnailImage(targetSize: targetSize) { (image, _) in
             DispatchQueue.main.async {
                 cell.imageView.image = image
@@ -131,16 +145,17 @@ extension LavenderImagePickerThumbnailViewController: UICollectionViewDataSource
     }
 
     @objc fileprivate func didClickPickButton(_ sender: UIButton) {
-        guard let controller = self.controller else { return }
+        guard let imagePickerController = self.imagePickerController else { return }
         guard let clickIndexPath = collectionView.indexPathForItem(at: sender.convert(CGPoint.zero, to: collectionView)) else { return }
         guard let clickAsset = assetList?[clickIndexPath.item] else { return }
         if sender.isSelected {
-            if controller.pickedAssetList.drop(asset: clickAsset) {
+            if imagePickerController.pickedAssetList.drop(asset: clickAsset) {
                 sender.isSelected = false
             }
         } else {
-            if controller.pickedAssetList.pick(asset: clickAsset) {
+            if imagePickerController.pickedAssetList.pick(asset: clickAsset) {
                 sender.isSelected = true
+                sender.layer.add(CAKeyframeAnimation.imagePickingButtonSelectedAnimation, forKey: nil)
             }
         }
     }
@@ -152,7 +167,6 @@ extension LavenderImagePickerThumbnailViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let imagePickerPreviewViewController = LavenderImagePickerPreviewViewController(nibName: nil, bundle: nil)
         imagePickerPreviewViewController.assetList = assetList
-        imagePickerPreviewViewController.controller = controller
         imagePickerPreviewViewController.currentIndexPath = indexPath
         navigationController?.pushViewController(imagePickerPreviewViewController, animated: true)
     }

@@ -29,10 +29,6 @@ class LVEAutoLayoutVLFViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "AutoLayout VLF"
-        let v = UIImage.image(with: UIColor.red, size: CGSize(width: 100, height: 200))
-        let iv = UIImageView(image: v)
-        iv.frame = CGRect(x: 100, y: 100, width: 100, height: 200)
-        view.addSubview(iv)
         /*
         let metrics = [
             "horizontalPadding": Metrics.padding,

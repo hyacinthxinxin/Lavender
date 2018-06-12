@@ -8,14 +8,24 @@
 import UIKit
 import Photos
 
+public struct LavenderImagePickerControllerInfoKey {
+    public static let pickedAssetList = "com.xiaoxiangyeyu.hn.lavender.imagePickerController.pickedAssetList"
+    public static let pickedImages = "com.xiaoxiangyeyu.hn.lavender.imagePickerController.pickedImages"
+}
+
 public protocol LavenderImagePickerControllerDelegate: UINavigationControllerDelegate {
 
     func imagePickerControllerDidCancel(_ picker: LavenderImagePickerController)
+
+    func imagePickerController(_ picker: LavenderImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
+
 }
 
 public class LavenderImagePickerController: UINavigationController {
 
     weak var imagePickerDelegate: LavenderImagePickerControllerDelegate?
+
+    public var barTintColor: UIColor = UIColor(red: 230/255, green: 230/255, blue: 250/255, alpha: 1)
 
     public var maximumNumberOfSelection: Int = 9
 
@@ -41,39 +51,11 @@ public class LavenderImagePickerController: UINavigationController {
 
     public var shouldShowEmptyAlbum = true
 
-    var pickedAssetList: LavenderImagePickerPickedAssetList = LavenderImagePickerPickedAssetList()
+    public var pickedAssetList: LavenderImagePickerPickedAssetList = LavenderImagePickerPickedAssetList()
 
     public override var delegate: UINavigationControllerDelegate? {
         didSet {
             imagePickerDelegate = delegate as? LavenderImagePickerControllerDelegate
-            guard let albumViewController = self.topViewController as? LavenderImagePickerAlbumViewController else {
-                return
-            }
-            albumViewController.imagePickerDelegate = imagePickerDelegate
-            if sourceType == .photoLibrary || sourceType == .savedPhotosAlbum {
-                albumViewController.controller = self
-                albumViewController.albumList =
-                    LavenderImagePickerAlbumList(
-                        assetCollectionTypes: assetCollectionTypes,
-                        assetCollectionSubtypes: assetCollectionSubtypes,
-                        mediaType: mediaType,
-                        shouldShowEmptyAlbum: shouldShowEmptyAlbum,
-                        handler: { [weak albumViewController] in
-                            DispatchQueue.main.async { [weak self] in
-                                albumViewController?.tableView.reloadData()
-                                guard let `self` = self else { return }
-                                if self.sourceType == .savedPhotosAlbum {
-                                    let assetList = albumViewController?.albumList?.first(where: {
-                                        $0.assetList.assetCollectionSubtype == PHAssetCollectionSubtype.smartAlbumUserLibrary
-                                    })
-                                    let imagePickerThumbnailViewController = LavenderImagePickerThumbnailViewController(imagePickerDelegate: self.imagePickerDelegate)
-                                    imagePickerThumbnailViewController.controller = self
-                                    imagePickerThumbnailViewController.assetList = assetList
-                                    self.pushViewController(imagePickerThumbnailViewController, animated: false)
-                                }
-                            }
-                    })
-            }
         }
     }
 
@@ -89,18 +71,33 @@ public class LavenderImagePickerController: UINavigationController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    convenience public init() {
-        self.init(rootViewController: LavenderImagePickerAlbumViewController())
-        self.pickedAssetList.controller = self
-    }
-
     public override init(rootViewController: UIViewController) {
         super.init(rootViewController: rootViewController)
     }
 
+    public override init(navigationBarClass: AnyClass?, toolbarClass: AnyClass?) {
+        super.init(navigationBarClass: navigationBarClass, toolbarClass: toolbarClass)
+    }
+
+    /// 初始化
+    convenience public init() {
+        self.init(navigationBarClass: nil, toolbarClass: nil)
+    }
+
     override public func viewDidLoad() {
         super.viewDidLoad()
-//        self.setViewControllers([LavenderImagePickerAlbumViewController()], animated: false)
+        self.navigationBar.barStyle = .black
+        self.navigationBar.setBackgroundImage(UIImage(color: barTintColor), for: .default)
+        self.navigationBar.isTranslucent = true
+        self.navigationBar.tintColor = UIColor.gray
+        self.pickedAssetList.controller = self
+
+        switch sourceType {
+        case .photoLibrary, .savedPhotosAlbum:
+            self.setViewControllers([LavenderImagePickerAlbumViewController()], animated: false)
+        case .camera:
+            self.setViewControllers([LavenderImagePickerCameraViewController()], animated: false)
+        }
     }
 
 }

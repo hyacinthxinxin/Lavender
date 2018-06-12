@@ -70,6 +70,10 @@ public struct LavenderUtil {
         return image
     }
 
+
+    /// 系统设置和键盘是否为简体中文
+    ///
+    /// - Returns: 结果
     public static func isSystemChineseHans() -> Bool {
         //zh-Hans-CN
         return Locale.preferredLanguages.first(where: { $0.contains("zh-Hans")}) != nil

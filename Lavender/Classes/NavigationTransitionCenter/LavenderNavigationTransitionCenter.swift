@@ -180,7 +180,7 @@ extension UINavigationBar {
         } else {
             (value(forKey: "_backgroundView") as? UIView)?.alpha = 1
         }
-        setBackgroundImage(UIImage.image(with: configuration.backgroundColor), for: .default)
+        setBackgroundImage(UIImage(color: configuration.backgroundColor), for: .default)
         shadowImage = UIImage()
         currentNavigationTransitionConfiguration = configuration
     }
@@ -193,7 +193,7 @@ extension UIToolbar {
         barStyle = configuration.barStyle
         isTranslucent = true
         tintColor = configuration.tintColor
-        setBackgroundImage(UIImage.image(with: configuration.backgroundColor), forToolbarPosition: .any, barMetrics: .default)
+        setBackgroundImage(UIImage(color: configuration.backgroundColor), forToolbarPosition: .any, barMetrics: .default)
         setShadowImage(UIImage(), forToolbarPosition: .any)
     }
 

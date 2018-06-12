@@ -30,4 +30,6 @@ public struct LavenderConst {
 
     /// 是否为iPhoneX
     public static let isiphoneX: Bool = (screenHeight == CGFloat(812) && screenWidth == CGFloat(375))
+
+    
 }

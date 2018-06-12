@@ -83,11 +83,11 @@
 		20C0FC3D20C4F01F007E5483 /* LavenderExample */ = {
 			isa = PBXGroup;
 			children = (
-				20C0FCEC20C76B44007E5483 /* UploadImage */,
 				20C0FC3E20C4F01F007E5483 /* AppDelegate.swift */,
 				20C0FC4C20C4F020007E5483 /* Info.plist */,
 				20C0FC6120C51503007E5483 /* Root */,
 				20C0FC6020C514E1007E5483 /* AuthLayout */,
+				20C0FCEC20C76B44007E5483 /* UploadImage */,
 				20C0FC7F20C527EA007E5483 /* Table */,
 				20C0FC7E20C527DB007E5483 /* Collection */,
 				20C0FC4720C4F020007E5483 /* Assets.xcassets */,

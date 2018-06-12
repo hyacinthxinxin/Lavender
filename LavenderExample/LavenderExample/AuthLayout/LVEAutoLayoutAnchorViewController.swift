@@ -17,7 +17,7 @@ class LVEAutoLayoutAnchorViewController: UIViewController {
         $0.setTitle("登录", for: .normal)
         $0.setTitleColor(UIColor.white, for: .normal)
         $0.titleLabel?.font = UIFont.systemFont(ofSize: 17)
-        $0.setBackgroundImage(UIImage.image(with: UIColor.cyan), for: .normal)
+        $0.setBackgroundImage(UIImage(color: UIColor.cyan), for: .normal)
         return $0
         }(UIButton(type: .custom))
 
