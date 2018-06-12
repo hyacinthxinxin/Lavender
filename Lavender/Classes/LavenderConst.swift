@@ -8,7 +8,6 @@
 import Foundation
 
 /// LavenderConst 简写
-
 public typealias LVC = LavenderConst
 
 public struct LavenderConst {

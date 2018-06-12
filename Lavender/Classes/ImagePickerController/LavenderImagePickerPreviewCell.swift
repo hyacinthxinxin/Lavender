@@ -10,8 +10,6 @@ import Photos
 
 class LavenderImagePickerPreviewCell: UICollectionViewCell {
 
-    static let reuseIdentifier = String(describing: LavenderImagePickerPreviewCell.self)
-
     var identifier: String?
 
     var imageRequestID: PHImageRequestID?
