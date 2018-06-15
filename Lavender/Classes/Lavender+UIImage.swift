@@ -13,16 +13,14 @@ import Accelerate
 
 public extension Lavender where Base: UIImage {
 
-    /**
-     Applies a blur to an image based on the specified radius, tint color saturation and mask image
-
-     - Parameter blurRadius: The radius of the blur.
-     - Parameter tintColor: The optional tint color.
-     - Parameter saturationDeltaFactor: The detla for saturation.
-     - Parameter maskImage: The optional image for masking.
-
-     - Returns New image or nil
-     */
+    /// Applies a blur to an image based on the specified radius, tint color saturation and mask image
+    ///
+    /// - Parameters:
+    ///   - blurRadius: The radius of the blur.
+    ///   - tintColor: The optional tint color.
+    ///   - saturationDeltaFactor: The detla for saturation.
+    ///   - maskImage: The optional image for masking.
+    /// - Returns: New image or nil
     func applyBlur(withRadius blurRadius: CGFloat, tintColor: UIColor?, saturationDeltaFactor: CGFloat, maskImage: UIImage? = nil) -> UIImage? {
         guard base.size.width > 0 && base.size.height > 0 && base.cgImage != nil else {
             return nil
@@ -146,42 +144,31 @@ public extension Lavender where Base: UIImage {
 
     }
 
-    // MARK: Image Effects
-
-    /**
-     Applies a light blur effect to the image
-
-     - Returns New image or nil
-     */
+    /// Applies a light blur effect to the image
+    ///
+    /// - Returns: New image or nil
     func applyLightEffect() -> UIImage? {
         return applyBlur(withRadius: 30, tintColor: UIColor(white: 1.0, alpha: 0.3), saturationDeltaFactor: 1.8)
     }
 
-    /**
-     Applies a extra light blur effect to the image
-
-     - Returns New image or nil
-     */
+    /// Applies a extra light blur effect to the image
+    ///
+    /// - Returns: New image or nil
     func applyExtraLightEffect() -> UIImage? {
         return applyBlur(withRadius: 20, tintColor: UIColor(white: 0.97, alpha: 0.82), saturationDeltaFactor: 1.8)
     }
 
-    /**
-     Applies a dark blur effect to the image
-
-     - Returns New image or nil
-     */
+    /// Applies a dark blur effect to the image
+    ///
+    /// - Returns: Returns New image or nil
     func applyDarkEffect() -> UIImage? {
         return applyBlur(withRadius: 20, tintColor: UIColor(white: 0.11, alpha: 0.73), saturationDeltaFactor: 1.8)
     }
 
-    /**
-     Applies a color tint to an image
-
-     - Parameter color: The tint color
-
-     - Returns New image or nil
-     */
+    /// Applies a color tint to an image
+    ///
+    /// - Parameter tintColor: The tint color
+    /// - Returns: New image or nil
     func applyTintEffect(tintColor: UIColor) -> UIImage? {
         let effectColorAlpha: CGFloat = 0.6
         var effectColor = tintColor
@@ -202,6 +189,40 @@ public extension Lavender where Base: UIImage {
         }
         return applyBlur(withRadius: 10, tintColor: effectColor, saturationDeltaFactor: -1.0)
     }
+
+
+    /// Applies gradient color overlay to an image.
+    ///
+    /// - Parameters:
+    ///   - gradientColors: An array of colors to use for the gradient.
+    ///   - locations: An array of locations to use for the gradient.
+    ///   - blendMode: The blending type to use.
+    /// - Returns: A new image
+    func apply(gradientColors: [UIColor], locations: [Float] = [], blendMode: CGBlendMode = CGBlendMode.normal) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(base.size, false, base.scale)
+        let context = UIGraphicsGetCurrentContext()
+        context?.translateBy(x: 0, y: base.size.height)
+        context?.scaleBy(x: 1.0, y: -1.0)
+        context?.setBlendMode(blendMode)
+        let rect = CGRect(x: 0, y: 0, width: base.size.width, height: base.size.height)
+        context?.draw(base.cgImage!, in: rect)
+        // Create gradient
+        let colorSpace = CGColorSpaceCreateDeviceRGB()
+        let colors = gradientColors.map {(color: UIColor) -> AnyObject? in return color.cgColor as AnyObject? } as NSArray
+        let gradient: CGGradient
+        if locations.count > 0 {
+            let cgLocations = locations.map { CGFloat($0) }
+            gradient = CGGradient(colorsSpace: colorSpace, colors: colors, locations: cgLocations)!
+        } else {
+            gradient = CGGradient(colorsSpace: colorSpace, colors: colors, locations: nil)!
+        }
+        // Apply gradient
+        context?.clip(to: rect, mask: base.cgImage!)
+        context?.drawLinearGradient(gradient, start: CGPoint(x: 0, y: 0), end: CGPoint(x: 0, y: base.size.height), options: CGGradientDrawingOptions(rawValue: 0))
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext();
+        return image!;
+    }
 }
 
 public enum UIImageContentMode {
@@ -221,15 +242,11 @@ public extension UIImage {
         return StaticSharedCache.shared!
     }
 
-    // MARK: Image from solid color
-    /**
-     Creates a new solid color image.
-
-     - Parameter color: The color to fill the image with.
-     - Parameter size: Image size (defaults: 10x10)
-
-     - Returns A new image
-     */
+    /// Creates a new solid color image.
+    ///
+    /// - Parameters:
+    ///   - color: The color to fill the image with.
+    ///   - size: Image size (defaults: 10x10)
     convenience init?(color: UIColor, size: CGSize = CGSize(width: 10, height: 10)) {
         let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
         UIGraphicsBeginImageContextWithOptions(rect.size, false, 0)
@@ -242,20 +259,15 @@ public extension UIImage {
         UIGraphicsEndImageContext()
     }
 
-    // MARK: Image from gradient colors
-    /**
-     Creates a gradient color image.
-
-     - Parameter gradientColors: An array of colors to use for the gradient.
-     - Parameter size: Image size (defaults: 10x10)
-
-     - Returns A new image
-     */
-    convenience init?(gradientColors:[UIColor], size:CGSize = CGSize(width: 10, height: 10), locations: [Float] = [] )
-    {
+    /// Creates a gradient color image.
+    ///
+    /// - Parameters:
+    ///   - gradientColors: An array of colors to use for the gradient.
+    ///   - size: Image size (defaults: 10x10)
+    ///   - locations: An array of locations to use for the gradient.
+    convenience init?(gradientColors:[UIColor], size:CGSize = CGSize(width: 10, height: 10), locations: [Float] = [] ) {
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         let context = UIGraphicsGetCurrentContext()
-
         let colorSpace = CGColorSpaceCreateDeviceRGB()
         let colors = gradientColors.map {(color: UIColor) -> AnyObject? in return color.cgColor as AnyObject? } as NSArray
         let gradient: CGGradient
@@ -270,55 +282,15 @@ public extension UIImage {
         UIGraphicsEndImageContext()
     }
 
-    /**
-     Applies gradient color overlay to an image.
-
-     - Parameter gradientColors: An array of colors to use for the gradient.
-     - Parameter locations: An array of locations to use for the gradient.
-     - Parameter blendMode: The blending type to use.
-
-     - Returns A new image
-     */
-    func apply(gradientColors: [UIColor], locations: [Float] = [], blendMode: CGBlendMode = CGBlendMode.normal) -> UIImage {
-        UIGraphicsBeginImageContextWithOptions(size, false, scale)
-        let context = UIGraphicsGetCurrentContext()
-        context?.translateBy(x: 0, y: size.height)
-        context?.scaleBy(x: 1.0, y: -1.0)
-        context?.setBlendMode(blendMode)
-        let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
-
-        context?.draw(self.cgImage!, in: rect)
-        // Create gradient
-        let colorSpace = CGColorSpaceCreateDeviceRGB()
-        let colors = gradientColors.map {(color: UIColor) -> AnyObject? in return color.cgColor as AnyObject? } as NSArray
-        let gradient: CGGradient
-        if locations.count > 0 {
-            let cgLocations = locations.map { CGFloat($0) }
-            gradient = CGGradient(colorsSpace: colorSpace, colors: colors, locations: cgLocations)!
-        } else {
-            gradient = CGGradient(colorsSpace: colorSpace, colors: colors, locations: nil)!
-        }
-        // Apply gradient
-        context?.clip(to: rect, mask: self.cgImage!)
-        context?.drawLinearGradient(gradient, start: CGPoint(x: 0, y: 0), end: CGPoint(x: 0, y: size.height), options: CGGradientDrawingOptions(rawValue: 0))
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext();
-        return image!;
-    }
-
-    // MARK: Image with Text
-    /**
-     Creates a text label image.
-
-     - Parameter text: The text to use in the label.
-     - Parameter font: The font (default: System font of size 18)
-     - Parameter color: The text color (default: White)
-     - Parameter backgroundColor: The background color (default:Gray).
-     - Parameter size: Image size (default: 10x10)
-     - Parameter offset: Center offset (default: 0x0)
-
-     - Returns A new image
-     */
+    /// Creates a text label image.
+    ///
+    /// - Parameters:
+    ///   - text: The text to use in the label.
+    ///   - font: The font (default: System font of size 18)
+    ///   - color: The text color (default: White)
+    ///   - backgroundColor: The background color (default:Gray).
+    ///   - size: Image size (default: 10x10)
+    ///   - offset: Center offset (default: 0x0)
     convenience init?(text: String, font: UIFont = UIFont.systemFont(ofSize: 18), color: UIColor = UIColor.white, backgroundColor: UIColor = UIColor.gray, size: CGSize = CGSize(width: 100, height: 100), offset: CGPoint = CGPoint(x: 0, y: 0)) {
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         label.font = font
@@ -351,49 +323,36 @@ public extension UIImage {
         UIGraphicsEndImageContext()
     }
 
-    // MARK: Image with Radial Gradient
     // Radial background originally from: http://developer.apple.com/library/ios/#documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/dq_shadings/dq_shadings.html
-    /**
-     Creates a radial gradient.
 
-     - Parameter startColor: The start color
-     - Parameter endColor: The end color
-     - Parameter radialGradientCenter: The gradient center (default:0.5,0.5).
-     - Parameter radius: Radius size (default: 0.5)
-     - Parameter size: Image size (default: 100x100)
-
-     - Returns A new image
-     */
+    /// Creates a radial gradient.
+    ///
+    /// - Parameters:
+    ///   - startColor: The start color
+    ///   - endColor: The end color
+    ///   - radialGradientCenter: The gradient center (default:0.5,0.5).
+    ///   - radius: Radius size (default: 0.5)
+    ///   - size: Image size (default: 100x100)
     convenience init?(startColor: UIColor, endColor: UIColor, radialGradientCenter: CGPoint = CGPoint(x: 0.5, y: 0.5), radius: Float = 0.5, size: CGSize = CGSize(width: 100, height: 100)) {
         UIGraphicsBeginImageContextWithOptions(size, true, 0)
-
         let num_locations: Int = 2
         let locations: [CGFloat] = [0.0, 1.0] as [CGFloat]
-
         let startComponents = startColor.cgColor.components!
         let endComponents = endColor.cgColor.components!
-
         let components: [CGFloat] = [startComponents[0], startComponents[1], startComponents[2], startComponents[3], endComponents[0], endComponents[1], endComponents[2], endComponents[3]]
-
         let colorSpace = CGColorSpaceCreateDeviceRGB()
         let gradient = CGGradient(colorSpace: colorSpace, colorComponents: components, locations: locations, count: num_locations)
-
         // Normalize the 0-1 ranged inputs to the width of the image
         let aCenter = CGPoint(x: radialGradientCenter.x * size.width, y: radialGradientCenter.y * size.height)
         let aRadius = CGFloat(min(size.width, size.height)) * CGFloat(radius)
-
         // Draw it
         UIGraphicsGetCurrentContext()?.drawRadialGradient(gradient!, startCenter: aCenter, startRadius: 0, endCenter: aCenter, endRadius: aRadius, options: CGGradientDrawingOptions.drawsAfterEndLocation)
         self.init(cgImage:(UIGraphicsGetImageFromCurrentImageContext()?.cgImage!)!)
-
         // Clean up
         UIGraphicsEndImageContext()
     }
 
-    // MARK: Alpha
-    /**
-     Returns true if the image has an alpha layer.
-     */
+    /// Returns true if the image has an alpha layer.
     var hasAlpha: Bool {
         let alpha: CGImageAlphaInfo = self.cgImage!.alphaInfo
         switch alpha {
@@ -404,14 +363,13 @@ public extension UIImage {
         }
     }
 
-    /**
-     Returns a copy of the given image, adding an alpha channel if it doesn't already have one.
-     */
+    /// Returns a copy of the given image, adding an alpha channel if it doesn't already have one.
+    ///
+    /// - Returns: a copy of the given image, adding an alpha channel if it doesn't already have one.
     func applyAlpha() -> UIImage? {
         if hasAlpha {
             return self
         }
-
         let imageRef = self.cgImage;
         let width = imageRef?.width;
         let height = imageRef?.height;

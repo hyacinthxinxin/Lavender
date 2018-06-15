@@ -19,13 +19,9 @@ public struct LavenderUtil {
     ///   - file: 文件名
     ///   - funcName: 方法名
     ///   - lineNum: 行号
-    public static func logging<T>(_ object: T?, fileName: String = #file, lineNum: Int = #line, funcName: String = #function) {
+    public static func logging<T>(_ object: T, fileName: String = #file, lineNum: Int = #line, funcName: String = #function) {
         #if DEBUG
-        if let object = object {
-            print("***** \(Date()) \(fileName.components(separatedBy: "/").last ?? "") (line: \(lineNum)) :: \(funcName) :: \(object)")
-        } else {
-            print("***** \(Date()) \(fileName.components(separatedBy: "/").last ?? "") (line: \(lineNum)) :: \(funcName) :: nil value")
-        }
+        print("\(Date()) \(fileName.components(separatedBy: "/").last ?? "") [line: \(lineNum)] :: \(funcName) ==> \(object)")
         #endif
     }
 
