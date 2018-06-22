@@ -11,7 +11,7 @@ fileprivate var leftNameKey: String = "leftNameKey"
 fileprivate var bottomNameKey: String = "bottomNameKey"
 fileprivate var rightNameKey: String = "rightNameKey"
 
-extension Lavender where Base: UIButton {
+public extension Lavender where Base: UIButton {
 
     func setEnlargeEdge(top: CGFloat, left: CGFloat, bottom: CGFloat, right: CGFloat) {
         objc_setAssociatedObject(base, &topNameKey, NSNumber(value: Float(top)), objc_AssociationPolicy.OBJC_ASSOCIATION_COPY_NONATOMIC)
