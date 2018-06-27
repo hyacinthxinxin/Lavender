@@ -21,7 +21,7 @@ public struct LavenderUtil {
     ///   - lineNum: 行号
     public static func logging<T>(_ object: T, fileName: String = #file, lineNum: Int = #line, funcName: String = #function) {
         #if DEBUG
-        print("\(Date()) \(fileName.components(separatedBy: "/").last ?? "") [line: \(lineNum)] :: \(funcName) ==> \(object)")
+        print("\(fileName.components(separatedBy: "/").last ?? "") [line: \(lineNum)] :: \(funcName) ==> \(object)")
         #endif
     }
 

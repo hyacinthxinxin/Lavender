@@ -21,6 +21,7 @@ extension UIView: LavenderCompatible { }
 extension String: LavenderCompatible { }
 extension UIImage: LavenderCompatible { }
 extension UIViewController: LavenderCompatible { }
+extension FileManager: LavenderCompatible { }
 
 
 /// 内部资源文件获取
