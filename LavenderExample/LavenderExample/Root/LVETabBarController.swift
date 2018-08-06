@@ -14,8 +14,7 @@ class LVETabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
-        self.setupMainTabBarViewControllers()
-/*
+//        self.setupMainTabBarViewControllers()
         if let mainLoadingViewController = UIStoryboard(name: "LVEMainLoading", bundle: nil).instantiateInitialViewController() as? LVEMainLoadingViewController {
             setViewControllers([mainLoadingViewController], animated: true)
             LVU.delay(seconds: 1.2) { [weak self] in
@@ -24,12 +23,15 @@ class LVETabBarController: UITabBarController {
                 self.setupMainTabBarViewControllers()
             }
         }
- */
+
     }
 
     fileprivate func setupMainTabBarViewControllers() {
         guard let categoryTableViewController = UIStoryboard(name: "LVECategory", bundle: nil).instantiateInitialViewController() as? LVECategoryTableViewController else { return }
-        setViewControllers([LVENavigationController(rootViewController: categoryTableViewController)], animated: true)
+        let simpleViewController = LVESimpleViewController(nibName: nil, bundle: nil)
+        let webViewController = LVEWebViewController(nibName: nil, bundle: nil)
+        setViewControllers([LVENavigationController(rootViewController: categoryTableViewController), simpleViewController, webViewController], animated: true)
+        selectedIndex = 1
     }
 
 }

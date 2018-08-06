@@ -27,6 +27,7 @@ public struct LavenderConst {
     /// 选项栏高度
     public static let tabBarHeight: CGFloat = 49
 
+    public static let bottomOffset: CGFloat = isiphoneX ? 34 : 0
     /// 是否为iPhoneX
     public static let isiphoneX: Bool = (screenHeight == CGFloat(812) && screenWidth == CGFloat(375))
 

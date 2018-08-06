@@ -35,12 +35,20 @@ class LVEAutoLayoutAnchorViewController: UIViewController {
         myView.backgroundColor = UIColor.cyan
         myView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(myView)
+//        NSLayoutConstraint.activate([
+//            myView.topAnchor.constraint(equalTo: view.topAnchor, constant: UIApplication.shared.statusBarFrame.size.height + 64 + 40),
+//            myView.leadingAnchor.constraint(equalTo: layoutGuide.leadingAnchor, constant: 20),
+//            myView.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor, constant: 0),
+//            myView.trailingAnchor.constraint(equalTo: layoutGuide.trailingAnchor, constant: -20)
+//            ])
+
         NSLayoutConstraint.activate([
-            myView.topAnchor.constraint(equalTo: view.topAnchor, constant: UIApplication.shared.statusBarFrame.size.height + 64 + 40),
-            myView.leadingAnchor.constraint(equalTo: layoutGuide.leadingAnchor, constant: 20),
-            myView.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor, constant: 0),
-            myView.trailingAnchor.constraint(equalTo: layoutGuide.trailingAnchor, constant: -20)
+            myView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor),
+            myView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            myView.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor),
+            myView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
             ])
+
         //        myView.topAnchor.constraint(equalTo: view.topAnchor, constant: 104).isActive = true
         //        myView.leadingAnchor.constraint(equalTo: layoutGuide.leadingAnchor, constant: 20).isActive = true
         //        myView.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor, constant: -64).isActive = true

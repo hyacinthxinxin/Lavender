@@ -1,0 +1,35 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 65,
+          "height" : 10
+        },
+        "cap-insets" : {
+          "bottom" : 30,
+          "top" : 30,
+          "right" : 139,
+          "left" : 75
+        }
+      },
+      "idiom" : "universal",
+      "filename" : "buttons_PNG105.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

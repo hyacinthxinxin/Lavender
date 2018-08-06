@@ -8,171 +8,177 @@
 
 /* Begin PBXBuildFile section */
 		04D5AD79280D031B6697FF9A1175CD29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		082C4B345083E67A99F2B75B968FE0EF /* UpApiUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C99CB959700C578A9D80DF3B86069234 /* UpApiUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09D80A426A1095C694D920BA3FC7BC94 /* LavenderImagePickerCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093AEBC848197388A728635A2224198 /* LavenderImagePickerCameraViewController.swift */; };
-		0A769D32DE462BA2F21E1BC4F98D1211 /* LavenderImagePickerThumbnailToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09AADE991A5BF98C99F9B6964C419D /* LavenderImagePickerThumbnailToolbar.swift */; };
-		10AFE7E06390FCC23F65D1791DC17129 /* com.xiaoxiangyeyu.haycinth.Lavender.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CCF26AE333715B8ADE844CD6DA82B763 /* com.xiaoxiangyeyu.haycinth.Lavender.bundle */; };
-		167B426D2D5674C8CDA7AAEC903833F6 /* UpYunFileDealManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8276589BA2ACC4D9A2EEBAE54DE759C2 /* UpYunFileDealManger.m */; };
-		1C5DD62A55D122DD8089000FB98092BC /* Countries.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7E5FB7AE1A5BA365EAC965D3F17ECA71 /* Countries.bundle */; };
-		1E8DE172D6E91557C6B9F4CE1C2CCD2E /* LavenderLocalePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440D0C0593B60736D883CFC9F2C9C17 /* LavenderLocalePickerViewController.swift */; };
-		22BCF0447F0875A800E8730A59444B0A /* LavenderNavigationTransitionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B165CD4C69520F74896A90ED45D5DC2 /* LavenderNavigationTransitionCenter.swift */; };
-		23CFE78E25CBFDBD1E4C3BF819D70868 /* UpSimpleHttpClient.h in Headers */ = {isa = PBXBuildFile; fileRef = FCF2AD2C7898DE843B89A41B5304BE88 /* UpSimpleHttpClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		26581965C342110EFB15005A9247ABCA /* LavenderImagePickerAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6D35270007341AE8F7B68B7B6EE550 /* LavenderImagePickerAlbumViewController.swift */; };
-		2730A1D2FA09478720B16E65353B069F /* Lavender-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F99FF598190FE90265DA815318AF86 /* Lavender-dummy.m */; };
-		2D7571B4320E5968CFD5168586B4AD7D /* LavenderImagePickerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4F202B121802BD0708052D8E671D41 /* LavenderImagePickerResource.swift */; };
-		2E4D1EA8641F46ECE5B136603D751787 /* LavenderImagePickerPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24D6595CB27C96B371980CCC81CED12 /* LavenderImagePickerPreviewCell.swift */; };
-		30A28A96BEA7CD2F99CB3768AD7E9AB8 /* Lavender+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D152A092D8B71B8562755F9EF3048A /* Lavender+String.swift */; };
-		374583BF388BC7AAA9E45464EA81240D /* LavenderLocaleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7456F047112BE761FAEB213FDB0ED9 /* LavenderLocaleStore.swift */; };
-		3E8F768FFAF1C3E78DB2F800657C2DDA /* LavenderImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12052DF26658F6C74125B361C328ECAB /* LavenderImageManager.swift */; };
-		40B9C4CBE446279B81CC30AB7B32BFAB /* LavenderUpYun.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1BAA3F4B3952BD17AF7A3C9A77F5C2 /* LavenderUpYun.swift */; };
-		475779D1D7F18B61B5724DCFC20ABE12 /* LavenderAuthHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978CBA71040D95DC944B118446B87C5B /* LavenderAuthHomeViewController.swift */; };
-		512451F17F409DFC3344100C3803ED2A /* ImagePicker.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC59FE756935812F5F05F8259F9D1AC /* ImagePicker.xcassets */; };
-		51D308419FED1F0D3F07843C45878514 /* LavenderBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848883ECA154970B9BC6D9B7FE37977E /* LavenderBundle.swift */; };
-		535D7268402EFE83AE0FA208B107D402 /* Lavender+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E5773408E9BF56DB78C740431240C6 /* Lavender+UIButton.swift */; };
-		53A6780BE7A39BE8E75B91BDECDD22A7 /* LavenderImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CFB6A7B7EBD38D6320882311BAA8F0 /* LavenderImagePickerController.swift */; };
-		5C879ED37CE9F1A22E6D46352C16F9D5 /* UpYunUploader.h in Headers */ = {isa = PBXBuildFile; fileRef = AB35512A4E6ECECBA7329A9431611D1D /* UpYunUploader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5ECE520463F83F99492345702AE207F9 /* UpYunFormUploader.h in Headers */ = {isa = PBXBuildFile; fileRef = 074A1160105C45C7410B540846AC834C /* UpYunFormUploader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6214DB9089A48464590AA6039B752415 /* LavenderImagePickerThumbnailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F372ADB9F33E2BE41CBE34B6C43CEB01 /* LavenderImagePickerThumbnailViewController.swift */; };
-		664393CDB8DA4CADB6EEDA89E5914340 /* LavenderAuthBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28072BF7AAAA4879C3E60B5A389983C /* LavenderAuthBaseViewController.swift */; };
-		6D66027F0E6BFA0D10F501FCB27D7759 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5F3CC11C4A148CACC0B837883155A /* test.jpg */; };
-		7A52E2ABC6E5E539DA3163B6F705D88A /* UpApiUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8847C06EA08C833E4824947A1DA202 /* UpApiUtils.m */; };
-		7B73FAB18D197D7AC645114305CC1A2D /* Lavender-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F23FDC9F43862639504B77DB055B8EF /* Lavender-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8167F6FCD7B554B459FC1104B5609E7F /* LavenderImagePickerThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24508E89361F42CCDEFD3C8B122D070 /* LavenderImagePickerThumbnailCell.swift */; };
-		848BD485BAC26683C70EA82FA9801577 /* LianzaiButton.xib in Sources */ = {isa = PBXBuildFile; fileRef = B2D93C564430638145D52CB41EDA5702 /* LianzaiButton.xib */; };
-		8A31A6568463EFFBD270EF2E3E1D1BC1 /* Lavender+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E26366E3476CA5E28C65AF4407AC1 /* Lavender+UIView.swift */; };
-		8D89E25089E504FCBB5A4F8390548BB0 /* LavenderImagePickerPreviewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A222883E51E49641450FA20C69E6D405 /* LavenderImagePickerPreviewLayout.swift */; };
+		051DC1B9DF3DFCEAE38B8643BAD5F869 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22E69A20B42BD082F62752A99E74180A /* test.jpg */; };
+		065E44B6C75F221ADB24367265EC6CF1 /* LavenderLocalePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523085FD369FD0B2813EB2DF59FF39C5 /* LavenderLocalePickerViewController.swift */; };
+		127EFD3270D311A67DF4DF06E3AD162E /* Lavender+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9041A533DCE40D242BEA1D99A37ACB72 /* Lavender+UIView.swift */; };
+		15B3EA8114E349C94619437930FAEACD /* ImagePicker.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1713A9909A32E085232D2C7C67B8A005 /* ImagePicker.xcassets */; };
+		190CDF9725B56F9B3EF1B1F85B45A1EE /* LavenderUpYun.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DDD486693BE07DA2A7340DBA8C0437 /* LavenderUpYun.swift */; };
+		1DC27251CFDCA3D753277B4358FCFAD0 /* Countries.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BD18044995194D66F1EB056BE9D31D02 /* Countries.bundle */; };
+		1E4075268C16A2FA2763CDC55BCDAA4A /* LavenderImagePickerThumbnailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970531ED5365A95287407F9E75DA4FD2 /* LavenderImagePickerThumbnailViewController.swift */; };
+		240A0E9242DD8FAD839977129820CDB0 /* UpSimpleHttpClient.h in Headers */ = {isa = PBXBuildFile; fileRef = AA760757700BBACB82F41A38FECD68AB /* UpSimpleHttpClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		280F96E31136DD3C0AE16CE53D1A5600 /* LavenderImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272509A2A119DE169AB40BA3EE185FD /* LavenderImageManager.swift */; };
+		3C6A19174AAFD43E7366F6C7035F3CB3 /* Lavender+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF36B8DAF7B16412431E944797BA0288 /* Lavender+UIImage.swift */; };
+		45FA6ECB1624FEF08498516BB5F85DF1 /* UpSimpleHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 18704D18DBE214948139F9E6BE2EBA97 /* UpSimpleHttpClient.m */; };
+		463B16CA66846B302AF3FF073CD51124 /* Lavender-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BED1D1AD7244E4B27FE0C385DBE0F0 /* Lavender-dummy.m */; };
+		476BAD78ACE72F5899F7D9F7FDE7BEC8 /* LavenderImagePickerThumbnailToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEB63C18BA83E16F14300D8E833DBEA /* LavenderImagePickerThumbnailToolbar.swift */; };
+		48717C22E87509C1F08739D38CE01E83 /* Lavender.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF1E4C7A3CCCE7D5D4999FE4635E2CF /* Lavender.swift */; };
+		4B1773AF23ECA794FABF1235377FAE42 /* LianzaiButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE18DEC08A4F0B83EC935953D8E526 /* LianzaiButton.swift */; };
+		4F3180676133BBEC48D733D0201F9893 /* Lavender+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A61122FE148B6A2748A5CA7A4B3FBE /* Lavender+UIImageView.swift */; };
+		4F6F974512B54E49D60C7D29573A51EB /* UpYunBlockUpLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E67078FF94EE15C53BFAD0FF56123 /* UpYunBlockUpLoader.m */; };
+		518900C231F37B38CADF072ED9F75D90 /* LavenderImagePickerPreviewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB41D60F1B684674CC958358B6DE71D /* LavenderImagePickerPreviewLayout.swift */; };
+		557778EA6B2A91341816CFC10B6039B8 /* LavenderLocaleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4984A3E749476E0BE47818AD250496A /* LavenderLocaleStore.swift */; };
+		5664048B420E48E31575FA05763B10F1 /* LavenderImagePickerPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96043166F25572770E66595048F3D8F3 /* LavenderImagePickerPreviewViewController.swift */; };
+		5757AA95D496576A08845E56B339B4D6 /* UpYunFileDealManger.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E6BA4C79CD5F88018E5247B9F75C131 /* UpYunFileDealManger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57EFF853F81C8E0FDD26601A4D0C1A25 /* LavenderImagePickerThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FE6E6EBE3E22A42902F4294A08EED5 /* LavenderImagePickerThumbnailCell.swift */; };
+		60ED1293867A8C72B9D7D471A8CC1ACB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51C4923F652B7D29D118C1EA2C8E1295 /* Images.xcassets */; };
+		623D72248212F655D45B410683B9E3AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		64036966A40CF86AA1D3A5EF431385E7 /* LavenderImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5DB68977936566BCAA33D21B796D42 /* LavenderImagePickerController.swift */; };
+		64E5745A1697BA0F787455EEB76B8427 /* UpYunUploader.h in Headers */ = {isa = PBXBuildFile; fileRef = 64F032BDEEB2C8C710B6EEA1D2A4E023 /* UpYunUploader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65AB251A13B0A489098A4BBA7920EF02 /* LavenderConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EFCEB91284244E12ABDA456D0AAE14 /* LavenderConst.swift */; };
+		7980A7834B23E7D17DEE147DD4E37D3C /* UpApiUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 72917F5E5759F53118B6187E9A81E691 /* UpApiUtils.m */; };
+		84DAB0E5E55E2DDE8073CBACD308CBD5 /* Lavender-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 286EDD7E8B099258A02D15CB1452908C /* Lavender-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AFCF47C4ECCDAA57EBBC9081A41E4F2 /* UpYunFormUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 23627AA65B65D438A036301B8717EC7B /* UpYunFormUploader.m */; };
+		8CEADA7E1776F72DBE59F2377E1618CA /* LavenderImagePickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955B456EA96693410796B3CFD66FE2D7 /* LavenderImagePickerModel.swift */; };
+		8EBB69EA93459BFE495A540017BB36DF /* LavenderImagePickerPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0BA62D94A56FB1F52A53213F5CC07F /* LavenderImagePickerPreviewCell.swift */; };
 		9176B6339CA62006AE5CFA968688C743 /* Pods-LavenderExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FFF541F272F1861475B8C45AA9E3E84 /* Pods-LavenderExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9770107DEF990CCD37E71B926E7C055B /* Lavender+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B0E4831A07A4A1C86CCF02C70AFA6 /* Lavender+UIColor.swift */; };
-		A8D0A318937CD1FC8D6AA62602AE1E53 /* Lavender+UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13685D2434B38AC239A83AFB82E76BA8 /* Lavender+UITableViewCell.swift */; };
-		ADA880668251F5A192D6C52D860D9564 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89B6F6AC7A2667A7890E5D50317EFCA2 /* Images.xcassets */; };
-		BD76A3267D98CA6895B649975CFC374E /* Lavender+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D35ACF56E0F21668AB8ED067258BF84 /* Lavender+UIImage.swift */; };
-		BE34D3F7855F6B97389E6A9AE3F3CA8F /* LavenderConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8856AA8650D1887FA93EF45AFCD9DCA /* LavenderConst.swift */; };
-		C14863AD2D41C0EF9F6DAF5657D132CB /* Lavender+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973430C2715392BFE7D93D07B24E4E6D /* Lavender+UIImageView.swift */; };
-		CCDE1A8829B598F10F1374B4118DCE80 /* UpYunBlockUpLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C3C8E7ECF11C3ADB06DDE1E94928042 /* UpYunBlockUpLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C9E42927209FF3746C3F22F5C852930 /* Lavender+UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036B4A6DA283B55378B52B7A6D498A4A /* Lavender+UITableViewCell.swift */; };
+		A3FE273B70B6FA70297BC284028BAC6F /* LavenderLeftAlignCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7A723C2003C791F930D883CE2A5A98 /* LavenderLeftAlignCollectionViewFlowLayout.swift */; };
+		A584F49CF1D7CEA051C2A4042FF700AA /* com.xiaoxiangyeyu.haycinth.Lavender.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CCF26AE333715B8ADE844CD6DA82B763 /* com.xiaoxiangyeyu.haycinth.Lavender.bundle */; };
+		AE994024ED704FC1834ADA28573E9676 /* Lavender+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32360F803E5EA83545E625958E9C4F51 /* Lavender+UITableView.swift */; };
+		B1A3417A341F359F5C1A4BFFB1519449 /* Lavender+FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E9A05F1AD260F2A09C8F5CFB20437 /* Lavender+FileManager.swift */; };
+		BCA6B9F6E16B4BBB1D0EF5919B084FA5 /* UpYunFormUploader.h in Headers */ = {isa = PBXBuildFile; fileRef = F67812CFAE0AB3DC3FE055FCD5ABD9AC /* UpYunFormUploader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE4DA6A9D58BC2A7B22FEBE7F21E1BD5 /* LianzaiButton.xib in Sources */ = {isa = PBXBuildFile; fileRef = 91D108F371082508918CBD6DE625F7D1 /* LianzaiButton.xib */; };
+		BF47CF21EB62709C21B5D28CDA59C952 /* LavenderUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435FB370CA9514A702A1A5896E439E6 /* LavenderUtil.swift */; };
+		C415E35308A78E803118528800A939BE /* LavenderImagePickerAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F7B5B0A1875A77D4F8155C324A0D14 /* LavenderImagePickerAlbumViewController.swift */; };
+		C4F2A063F9A1BA2847608CB633C7A5D4 /* UpYunBlockUpLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = F93B8AB66E4769EB7103058CABEED16E /* UpYunBlockUpLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBED473B7AB8DBF5A0AECF55527CDA37 /* LavenderImagePickerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15F2CB2A21A00810950570A64E4C106 /* LavenderImagePickerResource.swift */; };
+		CF115A40E359150BB2DC36D3F8D73BAD /* LavenderAuthBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AE6E3D3D488B8245B563AB3EC0F54A /* LavenderAuthBaseViewController.swift */; };
+		D45F92C03BFA393A9E484C5E22F29369 /* UpApiUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DA4D7792F853DC1EF4834C3C4656904 /* UpApiUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8C41D6785D845667A7971360FD11DFB /* LavenderImagePickerCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FEC00D97585701593943EF6E702D7B /* LavenderImagePickerCameraViewController.swift */; };
 		D9A6093D40A2229BFAB6A94313366589 /* Pods-LavenderExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D57B2E6D6A37DBED7F94EF5ED90AE6F5 /* Pods-LavenderExample-dummy.m */; };
-		D9C83EE47475E405941020F61EFDC8A6 /* Lavender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B25F81DA94A45096C44338F656E33 /* Lavender.swift */; };
-		DD2F5614DFA71499EDAB6910292A4EFB /* LavenderImagePickerAlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEC12820209E113856B9D1960E53E01 /* LavenderImagePickerAlbumCell.swift */; };
-		DE9A7212268641EF524643EBDEBDA7E4 /* Lavender+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B7C2A0FCE3A6D36EB705470A282BA /* Lavender+UITableView.swift */; };
-		E06A4BD7ECA305AA73FD251BF327295D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		E073647D433896D7C13172F87AFB101D /* LavenderImagePickerPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038DD21FFC804DAA232ACB09CE08FE68 /* LavenderImagePickerPreviewViewController.swift */; };
-		E11F6AE322D7E258258B4FCF03A26DA0 /* UpYunBlockUpLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A0024338E17E1CAB3F5CFDE78E1A3F /* UpYunBlockUpLoader.m */; };
-		E16655FC84ED23D7E6FA468AD6E0C2A4 /* LavenderUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE42C5883FE3CE71C1DACFE918BDCF /* LavenderUtil.swift */; };
-		E1D3C97AD9B45EDE84E53ADC579B83FB /* LianzaiButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6763D556B49B4690F7B4399E2CE317 /* LianzaiButton.swift */; };
-		E6AA9F5A47CD0E83A1571476F82DD601 /* LavenderAuthUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77392FC70503D0B5D7C05567D7323F6 /* LavenderAuthUserViewController.swift */; };
-		EC5B20AB89283E6CB4DBA6DA7F60FE24 /* UpYunFormUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA675EAD3542DBC5D971721A669CC6D /* UpYunFormUploader.m */; };
-		ED1F1EEC8E36FEB5DA458036918A5FD9 /* LavenderCountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B7840F51017C374212E0727C451596 /* LavenderCountryTableViewCell.swift */; };
-		EE4224C61F2F7FA96F21F4027D3320F5 /* LavenderImagePickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C1A55D68488CC63817A7F379356FA /* LavenderImagePickerModel.swift */; };
-		F0004BB7BC4420762956CF636F83F7C7 /* UpYunFileDealManger.h in Headers */ = {isa = PBXBuildFile; fileRef = 6072D440C1C7C9B0577BD6BA31D01985 /* UpYunFileDealManger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F162E10038A6483B1BCBCFDCB120CD8C /* LavenderLocaleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93045EF8759034EAF2A84FF1D293F9C5 /* LavenderLocaleInfo.swift */; };
-		F34B1A5B7B81238FE22F690733822CA8 /* UpSimpleHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B4338C278F39B16F639FAFD5F6FC28EE /* UpSimpleHttpClient.m */; };
+		DA07AF62520BC9C774E120411014A862 /* Lavender+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7716AAB87CBF795DE6740E1AC1C8C620 /* Lavender+Dequeue.swift */; };
+		DF74F4D78445CEDC9721D6E084709D04 /* LavenderCountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AEAA18DD7177E86DF40DEA4C197145 /* LavenderCountryTableViewCell.swift */; };
+		E04EF697F96E9BE7826AF2DD8AAE14C5 /* LavenderUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7343D9D090BE25C2DFC679E38221CC9D /* LavenderUserDefaults.swift */; };
+		E0CC9BF7F0A906F13CCE58CEB82A75F2 /* LavenderNavigationTransitionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D0CFDDA37E4F67929C5C178D277151 /* LavenderNavigationTransitionCenter.swift */; };
+		E7C9403C98C221174AF4624FFF04E40E /* Lavender+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD852BC13BC596C4E4B5098A29586CCC /* Lavender+UIButton.swift */; };
+		EDB9D7163DEF58FF1411F908B943BF1E /* LavenderAuthHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E52CC377BD9E141B6CC47FBF962B29 /* LavenderAuthHomeViewController.swift */; };
+		EE65120DF3721E51B883BC2C454F60D2 /* LavenderAuthUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932565C3987369B6C6F8B68797EEC5A9 /* LavenderAuthUserViewController.swift */; };
+		EF64BBCFC24518DA8A5FE421A7614D59 /* LavenderLocaleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D85147469FB42139F474B56F3762F72 /* LavenderLocaleInfo.swift */; };
+		F104FA5309247B144069E2284B765773 /* Lavender+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CC38E0C72FC4812F5BA49F2E6CD36D /* Lavender+UIColor.swift */; };
+		F4554FC9CAF9F8406CC6E3025E42BC10 /* Lavender+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B1A48AAFA35DF981C32E4B2965CFCC /* Lavender+String.swift */; };
+		F6DAB2DBB4B1FC635DD815E2CDC859E6 /* LavenderImagePickerAlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2893B6F8B1E042E458740BA03C6E7DCD /* LavenderImagePickerAlbumCell.swift */; };
+		FADD25C178E641A180DC932C37DD8002 /* UpYunFileDealManger.m in Sources */ = {isa = PBXBuildFile; fileRef = CC46D6100C25C6628A8BD8077330EDA8 /* UpYunFileDealManger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		60AA2AE2E752A1555BEFAED842CD208A /* PBXContainerItemProxy */ = {
+		907FEA7A6D925DC0BE2C2FFF68EA2F2A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 63EB1E253876F7DF987233F2881DF25C;
+			remoteGlobalIDString = CA858A46B4EE4E136B9BBEB06ADD5DE6;
 			remoteInfo = "Lavender-com.xiaoxiangyeyu.haycinth.Lavender";
 		};
 		F9D3249583D9BDCD70C02321AC5D0C72 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9950F6ECF338BC9AFD3525FEE57FAA2D;
+			remoteGlobalIDString = D7A153090B42ED6CA4884F21C389C251;
 			remoteInfo = Lavender;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		038DD21FFC804DAA232ACB09CE08FE68 /* LavenderImagePickerPreviewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerPreviewViewController.swift; sourceTree = "<group>"; };
-		074A1160105C45C7410B540846AC834C /* UpYunFormUploader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UpYunFormUploader.h; sourceTree = "<group>"; };
-		07D152A092D8B71B8562755F9EF3048A /* Lavender+String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Lavender+String.swift"; sourceTree = "<group>"; };
+		036B4A6DA283B55378B52B7A6D498A4A /* Lavender+UITableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lavender+UITableViewCell.swift"; path = "Lavender/Classes/Lavender+UITableViewCell.swift"; sourceTree = "<group>"; };
+		05BED1D1AD7244E4B27FE0C385DBE0F0 /* Lavender-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Lavender-dummy.m"; sourceTree = "<group>"; };
 		08BB86BDCC24F48FBEE5CFB807EAECD3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09079CAE4A1DF84291A5964768A78B45 /* Lavender-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Lavender-prefix.pch"; sourceTree = "<group>"; };
-		0F23FDC9F43862639504B77DB055B8EF /* Lavender-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Lavender-umbrella.h"; sourceTree = "<group>"; };
-		12052DF26658F6C74125B361C328ECAB /* LavenderImageManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImageManager.swift; sourceTree = "<group>"; };
-		13685D2434B38AC239A83AFB82E76BA8 /* Lavender+UITableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Lavender+UITableViewCell.swift"; sourceTree = "<group>"; };
-		1A8847C06EA08C833E4824947A1DA202 /* UpApiUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UpApiUtils.m; sourceTree = "<group>"; };
-		2093AEBC848197388A728635A2224198 /* LavenderImagePickerCameraViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerCameraViewController.swift; sourceTree = "<group>"; };
-		21CFB6A7B7EBD38D6320882311BAA8F0 /* LavenderImagePickerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerController.swift; sourceTree = "<group>"; };
-		2A3B7C2A0FCE3A6D36EB705470A282BA /* Lavender+UITableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Lavender+UITableView.swift"; sourceTree = "<group>"; };
-		2B165CD4C69520F74896A90ED45D5DC2 /* LavenderNavigationTransitionCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderNavigationTransitionCenter.swift; sourceTree = "<group>"; };
-		33A0024338E17E1CAB3F5CFDE78E1A3F /* UpYunBlockUpLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UpYunBlockUpLoader.m; sourceTree = "<group>"; };
-		351A880DA51A5173817129DB44977737 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		3DD5F3CC11C4A148CACC0B837883155A /* test.jpg */ = {isa = PBXFileReference; includeInIndex = 1; name = test.jpg; path = Lavender/Assets/test.jpg; sourceTree = "<group>"; };
-		568E26366E3476CA5E28C65AF4407AC1 /* Lavender+UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Lavender+UIView.swift"; sourceTree = "<group>"; };
-		5923AEE35A41BF499A5E136B30FD3A81 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D35ACF56E0F21668AB8ED067258BF84 /* Lavender+UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Lavender+UIImage.swift"; sourceTree = "<group>"; };
-		6072D440C1C7C9B0577BD6BA31D01985 /* UpYunFileDealManger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UpYunFileDealManger.h; sourceTree = "<group>"; };
-		61F99FF598190FE90265DA815318AF86 /* Lavender-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Lavender-dummy.m"; sourceTree = "<group>"; };
+		106E641EF3E38649DCAA8BD10FEF8313 /* Lavender.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Lavender.xcconfig; sourceTree = "<group>"; };
+		1713A9909A32E085232D2C7C67B8A005 /* ImagePicker.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = ImagePicker.xcassets; path = Lavender/Assets/ImagePicker.xcassets; sourceTree = "<group>"; };
+		18704D18DBE214948139F9E6BE2EBA97 /* UpSimpleHttpClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UpSimpleHttpClient.m; sourceTree = "<group>"; };
+		22E69A20B42BD082F62752A99E74180A /* test.jpg */ = {isa = PBXFileReference; includeInIndex = 1; name = test.jpg; path = Lavender/Assets/test.jpg; sourceTree = "<group>"; };
+		23627AA65B65D438A036301B8717EC7B /* UpYunFormUploader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UpYunFormUploader.m; sourceTree = "<group>"; };
+		286EDD7E8B099258A02D15CB1452908C /* Lavender-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Lavender-umbrella.h"; sourceTree = "<group>"; };
+		2893B6F8B1E042E458740BA03C6E7DCD /* LavenderImagePickerAlbumCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerAlbumCell.swift; sourceTree = "<group>"; };
+		32360F803E5EA83545E625958E9C4F51 /* Lavender+UITableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lavender+UITableView.swift"; path = "Lavender/Classes/Lavender+UITableView.swift"; sourceTree = "<group>"; };
+		3B7A723C2003C791F930D883CE2A5A98 /* LavenderLeftAlignCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LavenderLeftAlignCollectionViewFlowLayout.swift; path = Lavender/Classes/LavenderLeftAlignCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		42EFCEB91284244E12ABDA456D0AAE14 /* LavenderConst.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LavenderConst.swift; path = Lavender/Classes/LavenderConst.swift; sourceTree = "<group>"; };
+		46B1A48AAFA35DF981C32E4B2965CFCC /* Lavender+String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lavender+String.swift"; path = "Lavender/Classes/Lavender+String.swift"; sourceTree = "<group>"; };
+		478E274E55A3BFAC19695F98C73FBF85 /* ResourceBundle-com.xiaoxiangyeyu.haycinth.Lavender-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-com.xiaoxiangyeyu.haycinth.Lavender-Info.plist"; sourceTree = "<group>"; };
+		47906A5727F8655E116F303987947CA9 /* Lavender.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = Lavender.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4F5E67078FF94EE15C53BFAD0FF56123 /* UpYunBlockUpLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UpYunBlockUpLoader.m; sourceTree = "<group>"; };
+		51A62571C160EC007DA07E4D31DF9DE4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51C4923F652B7D29D118C1EA2C8E1295 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Lavender/Assets/Images.xcassets; sourceTree = "<group>"; };
+		523085FD369FD0B2813EB2DF59FF39C5 /* LavenderLocalePickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderLocalePickerViewController.swift; sourceTree = "<group>"; };
+		57FE6E6EBE3E22A42902F4294A08EED5 /* LavenderImagePickerThumbnailCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerThumbnailCell.swift; sourceTree = "<group>"; };
+		5E0E9A05F1AD260F2A09C8F5CFB20437 /* Lavender+FileManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lavender+FileManager.swift"; path = "Lavender/Classes/Lavender+FileManager.swift"; sourceTree = "<group>"; };
+		5E6BA4C79CD5F88018E5247B9F75C131 /* UpYunFileDealManger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UpYunFileDealManger.h; sourceTree = "<group>"; };
+		64F032BDEEB2C8C710B6EEA1D2A4E023 /* UpYunUploader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UpYunUploader.h; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		69D083659F4EED7918F9BA6EA01B0E83 /* ResourceBundle-com.xiaoxiangyeyu.haycinth.Lavender-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-com.xiaoxiangyeyu.haycinth.Lavender-Info.plist"; sourceTree = "<group>"; };
 		69EE568DBBDB5E945F70B039A875344F /* Pods-LavenderExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LavenderExample.release.xcconfig"; sourceTree = "<group>"; };
-		6C51CA1B76F04916224EA7CADB3B93BB /* Lavender.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Lavender.xcconfig; sourceTree = "<group>"; };
-		6C6763D556B49B4690F7B4399E2CE317 /* LianzaiButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LianzaiButton.swift; sourceTree = "<group>"; };
 		6FFF541F272F1861475B8C45AA9E3E84 /* Pods-LavenderExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LavenderExample-umbrella.h"; sourceTree = "<group>"; };
-		711B0E4831A07A4A1C86CCF02C70AFA6 /* Lavender+UIColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Lavender+UIColor.swift"; sourceTree = "<group>"; };
+		71AE6E3D3D488B8245B563AB3EC0F54A /* LavenderAuthBaseViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderAuthBaseViewController.swift; sourceTree = "<group>"; };
 		72109C485B505E5BBB1A867941423B95 /* Pods-LavenderExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LavenderExample.debug.xcconfig"; sourceTree = "<group>"; };
-		7C3C8E7ECF11C3ADB06DDE1E94928042 /* UpYunBlockUpLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UpYunBlockUpLoader.h; sourceTree = "<group>"; };
-		7E5FB7AE1A5BA365EAC965D3F17ECA71 /* Countries.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Countries.bundle; path = Lavender/Assets/Countries.bundle; sourceTree = "<group>"; };
-		8276589BA2ACC4D9A2EEBAE54DE759C2 /* UpYunFileDealManger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UpYunFileDealManger.m; sourceTree = "<group>"; };
-		847B25F81DA94A45096C44338F656E33 /* Lavender.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Lavender.swift; path = Lavender/Classes/Lavender.swift; sourceTree = "<group>"; };
-		848883ECA154970B9BC6D9B7FE37977E /* LavenderBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LavenderBundle.swift; path = Lavender/Classes/LavenderBundle.swift; sourceTree = "<group>"; };
-		89B6F6AC7A2667A7890E5D50317EFCA2 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Lavender/Assets/Images.xcassets; sourceTree = "<group>"; };
-		911ED9A5382B93E922B44BD5E4624D46 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		93045EF8759034EAF2A84FF1D293F9C5 /* LavenderLocaleInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderLocaleInfo.swift; sourceTree = "<group>"; };
+		72917F5E5759F53118B6187E9A81E691 /* UpApiUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UpApiUtils.m; sourceTree = "<group>"; };
+		7343D9D090BE25C2DFC679E38221CC9D /* LavenderUserDefaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LavenderUserDefaults.swift; path = Lavender/Classes/LavenderUserDefaults.swift; sourceTree = "<group>"; };
+		7716AAB87CBF795DE6740E1AC1C8C620 /* Lavender+Dequeue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lavender+Dequeue.swift"; path = "Lavender/Classes/Lavender+Dequeue.swift"; sourceTree = "<group>"; };
+		7CEB63C18BA83E16F14300D8E833DBEA /* LavenderImagePickerThumbnailToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerThumbnailToolbar.swift; sourceTree = "<group>"; };
+		7D85147469FB42139F474B56F3762F72 /* LavenderLocaleInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderLocaleInfo.swift; sourceTree = "<group>"; };
+		7DA4D7792F853DC1EF4834C3C4656904 /* UpApiUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UpApiUtils.h; sourceTree = "<group>"; };
+		7F0BA62D94A56FB1F52A53213F5CC07F /* LavenderImagePickerPreviewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerPreviewCell.swift; sourceTree = "<group>"; };
+		83FE18DEC08A4F0B83EC935953D8E526 /* LianzaiButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LianzaiButton.swift; sourceTree = "<group>"; };
+		84E52CC377BD9E141B6CC47FBF962B29 /* LavenderAuthHomeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderAuthHomeViewController.swift; sourceTree = "<group>"; };
+		9041A533DCE40D242BEA1D99A37ACB72 /* Lavender+UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lavender+UIView.swift"; path = "Lavender/Classes/Lavender+UIView.swift"; sourceTree = "<group>"; };
+		91D108F371082508918CBD6DE625F7D1 /* LianzaiButton.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LianzaiButton.xib; sourceTree = "<group>"; };
+		932565C3987369B6C6F8B68797EEC5A9 /* LavenderAuthUserViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderAuthUserViewController.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		973430C2715392BFE7D93D07B24E4E6D /* Lavender+UIImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Lavender+UIImageView.swift"; sourceTree = "<group>"; };
-		978CBA71040D95DC944B118446B87C5B /* LavenderAuthHomeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderAuthHomeViewController.swift; sourceTree = "<group>"; };
+		955B456EA96693410796B3CFD66FE2D7 /* LavenderImagePickerModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerModel.swift; sourceTree = "<group>"; };
+		95D0CFDDA37E4F67929C5C178D277151 /* LavenderNavigationTransitionCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderNavigationTransitionCenter.swift; sourceTree = "<group>"; };
+		96043166F25572770E66595048F3D8F3 /* LavenderImagePickerPreviewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerPreviewViewController.swift; sourceTree = "<group>"; };
+		96F7B5B0A1875A77D4F8155C324A0D14 /* LavenderImagePickerAlbumViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerAlbumViewController.swift; sourceTree = "<group>"; };
+		970531ED5365A95287407F9E75DA4FD2 /* LavenderImagePickerThumbnailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerThumbnailViewController.swift; sourceTree = "<group>"; };
 		994EB688E9FAC787BBAC5F231256482E /* Pods-LavenderExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LavenderExample.modulemap"; sourceTree = "<group>"; };
-		99601DAA7C4D25F2EF3233D404EF687D /* Lavender.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = Lavender.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9CD02CA48368C4B5F3BE1D8E78FF63B6 /* Pods-LavenderExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LavenderExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A222883E51E49641450FA20C69E6D405 /* LavenderImagePickerPreviewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerPreviewLayout.swift; sourceTree = "<group>"; };
-		AB1BAA3F4B3952BD17AF7A3C9A77F5C2 /* LavenderUpYun.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderUpYun.swift; sourceTree = "<group>"; };
-		AB35512A4E6ECECBA7329A9431611D1D /* UpYunUploader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UpYunUploader.h; sourceTree = "<group>"; };
-		AF945F3B243D9E39101CCC138FFE14A8 /* Lavender.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Lavender.modulemap; sourceTree = "<group>"; };
-		AFC59FE756935812F5F05F8259F9D1AC /* ImagePicker.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = ImagePicker.xcassets; path = Lavender/Assets/ImagePicker.xcassets; sourceTree = "<group>"; };
-		B24508E89361F42CCDEFD3C8B122D070 /* LavenderImagePickerThumbnailCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerThumbnailCell.swift; sourceTree = "<group>"; };
-		B24D6595CB27C96B371980CCC81CED12 /* LavenderImagePickerPreviewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerPreviewCell.swift; sourceTree = "<group>"; };
-		B28072BF7AAAA4879C3E60B5A389983C /* LavenderAuthBaseViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderAuthBaseViewController.swift; sourceTree = "<group>"; };
-		B2D93C564430638145D52CB41EDA5702 /* LianzaiButton.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LianzaiButton.xib; sourceTree = "<group>"; };
-		B4338C278F39B16F639FAFD5F6FC28EE /* UpSimpleHttpClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UpSimpleHttpClient.m; sourceTree = "<group>"; };
-		BC09AADE991A5BF98C99F9B6964C419D /* LavenderImagePickerThumbnailToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerThumbnailToolbar.swift; sourceTree = "<group>"; };
-		BE6D35270007341AE8F7B68B7B6EE550 /* LavenderImagePickerAlbumViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerAlbumViewController.swift; sourceTree = "<group>"; };
-		C440D0C0593B60736D883CFC9F2C9C17 /* LavenderLocalePickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderLocalePickerViewController.swift; sourceTree = "<group>"; };
-		C45C1A55D68488CC63817A7F379356FA /* LavenderImagePickerModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerModel.swift; sourceTree = "<group>"; };
+		A3FBB646CF56F96F0D2426A424230CE3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A9A61122FE148B6A2748A5CA7A4B3FBE /* Lavender+UIImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lavender+UIImageView.swift"; path = "Lavender/Classes/Lavender+UIImageView.swift"; sourceTree = "<group>"; };
+		AA760757700BBACB82F41A38FECD68AB /* UpSimpleHttpClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UpSimpleHttpClient.h; sourceTree = "<group>"; };
+		ACB41D60F1B684674CC958358B6DE71D /* LavenderImagePickerPreviewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerPreviewLayout.swift; sourceTree = "<group>"; };
+		B4984A3E749476E0BE47818AD250496A /* LavenderLocaleStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderLocaleStore.swift; sourceTree = "<group>"; };
+		B6FEC00D97585701593943EF6E702D7B /* LavenderImagePickerCameraViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerCameraViewController.swift; sourceTree = "<group>"; };
+		B7DDD486693BE07DA2A7340DBA8C0437 /* LavenderUpYun.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderUpYun.swift; sourceTree = "<group>"; };
+		B826E9410AB42A64E1C88D04E3347097 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		BD18044995194D66F1EB056BE9D31D02 /* Countries.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Countries.bundle; path = Lavender/Assets/Countries.bundle; sourceTree = "<group>"; };
+		BD5DB68977936566BCAA33D21B796D42 /* LavenderImagePickerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerController.swift; sourceTree = "<group>"; };
+		BD852BC13BC596C4E4B5098A29586CCC /* Lavender+UIButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lavender+UIButton.swift"; path = "Lavender/Classes/Lavender+UIButton.swift"; sourceTree = "<group>"; };
+		C4DC9CF971862FC0458C5DDDDB7A5685 /* Lavender-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Lavender-prefix.pch"; sourceTree = "<group>"; };
 		C629A8969FE1A23A4DA2D7F7C6848D3C /* Pods-LavenderExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LavenderExample-frameworks.sh"; sourceTree = "<group>"; };
-		C77392FC70503D0B5D7C05567D7323F6 /* LavenderAuthUserViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderAuthUserViewController.swift; sourceTree = "<group>"; };
-		C99CB959700C578A9D80DF3B86069234 /* UpApiUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UpApiUtils.h; sourceTree = "<group>"; };
+		CC46D6100C25C6628A8BD8077330EDA8 /* UpYunFileDealManger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UpYunFileDealManger.m; sourceTree = "<group>"; };
 		CCF26AE333715B8ADE844CD6DA82B763 /* com.xiaoxiangyeyu.haycinth.Lavender.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = com.xiaoxiangyeyu.haycinth.Lavender.bundle; path = "Lavender-com.xiaoxiangyeyu.haycinth.Lavender.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD67F8D9425B8744CEC5D355D01ED8E2 /* Pods-LavenderExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LavenderExample-resources.sh"; sourceTree = "<group>"; };
-		CD7456F047112BE761FAEB213FDB0ED9 /* LavenderLocaleStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderLocaleStore.swift; sourceTree = "<group>"; };
-		D1B7840F51017C374212E0727C451596 /* LavenderCountryTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderCountryTableViewCell.swift; sourceTree = "<group>"; };
 		D395457FE2E6D8A8587A47DF7F54A717 /* Pods_LavenderExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LavenderExample.framework; path = "Pods-LavenderExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3CC38E0C72FC4812F5BA49F2E6CD36D /* Lavender+UIColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lavender+UIColor.swift"; path = "Lavender/Classes/Lavender+UIColor.swift"; sourceTree = "<group>"; };
 		D57B2E6D6A37DBED7F94EF5ED90AE6F5 /* Pods-LavenderExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LavenderExample-dummy.m"; sourceTree = "<group>"; };
-		DDA675EAD3542DBC5D971721A669CC6D /* UpYunFormUploader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UpYunFormUploader.m; sourceTree = "<group>"; };
-		E8856AA8650D1887FA93EF45AFCD9DCA /* LavenderConst.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LavenderConst.swift; path = Lavender/Classes/LavenderConst.swift; sourceTree = "<group>"; };
-		EE4F202B121802BD0708052D8E671D41 /* LavenderImagePickerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerResource.swift; sourceTree = "<group>"; };
-		EEAE42C5883FE3CE71C1DACFE918BDCF /* LavenderUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LavenderUtil.swift; path = Lavender/Classes/LavenderUtil.swift; sourceTree = "<group>"; };
-		EFEC12820209E113856B9D1960E53E01 /* LavenderImagePickerAlbumCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerAlbumCell.swift; sourceTree = "<group>"; };
+		DBB03C0E74859BE2C4F5B22F9DB6F098 /* Lavender.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Lavender.modulemap; sourceTree = "<group>"; };
+		EAF1E4C7A3CCCE7D5D4999FE4635E2CF /* Lavender.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Lavender.swift; path = Lavender/Classes/Lavender.swift; sourceTree = "<group>"; };
+		EF36B8DAF7B16412431E944797BA0288 /* Lavender+UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lavender+UIImage.swift"; path = "Lavender/Classes/Lavender+UIImage.swift"; sourceTree = "<group>"; };
 		F06B65555315B677795A269B9B248675 /* Lavender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Lavender.framework; path = Lavender.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F372ADB9F33E2BE41CBE34B6C43CEB01 /* LavenderImagePickerThumbnailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerThumbnailViewController.swift; sourceTree = "<group>"; };
-		F4E5773408E9BF56DB78C740431240C6 /* Lavender+UIButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Lavender+UIButton.swift"; sourceTree = "<group>"; };
+		F15F2CB2A21A00810950570A64E4C106 /* LavenderImagePickerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImagePickerResource.swift; sourceTree = "<group>"; };
+		F1AEAA18DD7177E86DF40DEA4C197145 /* LavenderCountryTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderCountryTableViewCell.swift; sourceTree = "<group>"; };
+		F272509A2A119DE169AB40BA3EE185FD /* LavenderImageManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LavenderImageManager.swift; sourceTree = "<group>"; };
+		F435FB370CA9514A702A1A5896E439E6 /* LavenderUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LavenderUtil.swift; path = Lavender/Classes/LavenderUtil.swift; sourceTree = "<group>"; };
+		F67812CFAE0AB3DC3FE055FCD5ABD9AC /* UpYunFormUploader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UpYunFormUploader.h; sourceTree = "<group>"; };
+		F93B8AB66E4769EB7103058CABEED16E /* UpYunBlockUpLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UpYunBlockUpLoader.h; sourceTree = "<group>"; };
 		F9F311E2E07FE46FE4748B0C18A0F3E7 /* Pods-LavenderExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LavenderExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		FCF2AD2C7898DE843B89A41B5304BE88 /* UpSimpleHttpClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UpSimpleHttpClient.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4C5A120AE98BBAF8A22D6C4404842C2A /* Frameworks */ = {
+		73EA3DCF3594240B9148B8408C9ABD12 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E06A4BD7ECA305AA73FD251BF327295D /* Foundation.framework in Frameworks */,
+				623D72248212F655D45B410683B9E3AE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D063C396DB58556BF37FBD03AD2969FB /* Frameworks */ = {
+		DBFB0ACED86D9A98B46E436998F52074 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -190,31 +196,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		144DBA7704DC4469F85C45A796612773 /* Development Pods */ = {
+		09E1650B5BB064CA726D5972DC80A9EF /* Locale */ = {
 			isa = PBXGroup;
 			children = (
-				475CC4098CC8AFC8117A89817816FB8F /* Lavender */,
+				F1AEAA18DD7177E86DF40DEA4C197145 /* LavenderCountryTableViewCell.swift */,
+				7D85147469FB42139F474B56F3762F72 /* LavenderLocaleInfo.swift */,
+				523085FD369FD0B2813EB2DF59FF39C5 /* LavenderLocalePickerViewController.swift */,
+				B4984A3E749476E0BE47818AD250496A /* LavenderLocaleStore.swift */,
 			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		1AC983ABBD7A7BC00B688DE54A1087C5 /* NavigationTransitionCenter */ = {
-			isa = PBXGroup;
-			children = (
-				2B165CD4C69520F74896A90ED45D5DC2 /* LavenderNavigationTransitionCenter.swift */,
-			);
-			name = NavigationTransitionCenter;
-			path = Lavender/Classes/NavigationTransitionCenter;
-			sourceTree = "<group>";
-		};
-		227A4BBDA5B3D1F490DCE01B57808478 /* UpYun */ = {
-			isa = PBXGroup;
-			children = (
-				AB1BAA3F4B3952BD17AF7A3C9A77F5C2 /* LavenderUpYun.swift */,
-				623CEA12A4D93D8269D605EA38B7F471 /* UpYunSDK */,
-			);
-			name = UpYun;
-			path = Lavender/Classes/UpYun;
+			name = Locale;
+			path = Lavender/Classes/Locale;
 			sourceTree = "<group>";
 		};
 		24CF8820565226DB2498E97943988063 /* Targets Support Files */ = {
@@ -243,47 +234,80 @@
 			path = "Target Support Files/Pods-LavenderExample";
 			sourceTree = "<group>";
 		};
-		3686746E710BB81E8EAF64218BC5FA1E /* ImagePickerController */ = {
+		396ADD5039032322652A6193E6E671EA /* Lavender */ = {
 			isa = PBXGroup;
 			children = (
-				12052DF26658F6C74125B361C328ECAB /* LavenderImageManager.swift */,
-				EFEC12820209E113856B9D1960E53E01 /* LavenderImagePickerAlbumCell.swift */,
-				BE6D35270007341AE8F7B68B7B6EE550 /* LavenderImagePickerAlbumViewController.swift */,
-				2093AEBC848197388A728635A2224198 /* LavenderImagePickerCameraViewController.swift */,
-				21CFB6A7B7EBD38D6320882311BAA8F0 /* LavenderImagePickerController.swift */,
-				C45C1A55D68488CC63817A7F379356FA /* LavenderImagePickerModel.swift */,
-				B24D6595CB27C96B371980CCC81CED12 /* LavenderImagePickerPreviewCell.swift */,
-				A222883E51E49641450FA20C69E6D405 /* LavenderImagePickerPreviewLayout.swift */,
-				038DD21FFC804DAA232ACB09CE08FE68 /* LavenderImagePickerPreviewViewController.swift */,
-				EE4F202B121802BD0708052D8E671D41 /* LavenderImagePickerResource.swift */,
-				B24508E89361F42CCDEFD3C8B122D070 /* LavenderImagePickerThumbnailCell.swift */,
-				BC09AADE991A5BF98C99F9B6964C419D /* LavenderImagePickerThumbnailToolbar.swift */,
-				F372ADB9F33E2BE41CBE34B6C43CEB01 /* LavenderImagePickerThumbnailViewController.swift */,
-			);
-			name = ImagePickerController;
-			path = Lavender/Classes/ImagePickerController;
-			sourceTree = "<group>";
-		};
-		475CC4098CC8AFC8117A89817816FB8F /* Lavender */ = {
-			isa = PBXGroup;
-			children = (
-				847B25F81DA94A45096C44338F656E33 /* Lavender.swift */,
-				848883ECA154970B9BC6D9B7FE37977E /* LavenderBundle.swift */,
-				E8856AA8650D1887FA93EF45AFCD9DCA /* LavenderConst.swift */,
-				EEAE42C5883FE3CE71C1DACFE918BDCF /* LavenderUtil.swift */,
-				5672AA908AD3BB53D7931A30F6AD56CE /* AuthModule */,
-				A95FD9F45DF0EAB691100D96B1B92D37 /* Button */,
-				CD2ADA7C06F97DAFFC39E38840D8E394 /* Extension */,
-				3686746E710BB81E8EAF64218BC5FA1E /* ImagePickerController */,
-				A4847E8A862DE1FCB4EF5457F360115D /* Locale */,
-				1AC983ABBD7A7BC00B688DE54A1087C5 /* NavigationTransitionCenter */,
-				CBE915A090FA8A669B9A6176C606C42A /* Pod */,
-				7B4547FC7107E3AE6FE1D43E1AADCA2F /* Resources */,
-				C9531FED9B1A57F6DA6106FF9F3C587A /* Support Files */,
-				227A4BBDA5B3D1F490DCE01B57808478 /* UpYun */,
+				EAF1E4C7A3CCCE7D5D4999FE4635E2CF /* Lavender.swift */,
+				7716AAB87CBF795DE6740E1AC1C8C620 /* Lavender+Dequeue.swift */,
+				5E0E9A05F1AD260F2A09C8F5CFB20437 /* Lavender+FileManager.swift */,
+				46B1A48AAFA35DF981C32E4B2965CFCC /* Lavender+String.swift */,
+				BD852BC13BC596C4E4B5098A29586CCC /* Lavender+UIButton.swift */,
+				D3CC38E0C72FC4812F5BA49F2E6CD36D /* Lavender+UIColor.swift */,
+				EF36B8DAF7B16412431E944797BA0288 /* Lavender+UIImage.swift */,
+				A9A61122FE148B6A2748A5CA7A4B3FBE /* Lavender+UIImageView.swift */,
+				32360F803E5EA83545E625958E9C4F51 /* Lavender+UITableView.swift */,
+				036B4A6DA283B55378B52B7A6D498A4A /* Lavender+UITableViewCell.swift */,
+				9041A533DCE40D242BEA1D99A37ACB72 /* Lavender+UIView.swift */,
+				42EFCEB91284244E12ABDA456D0AAE14 /* LavenderConst.swift */,
+				3B7A723C2003C791F930D883CE2A5A98 /* LavenderLeftAlignCollectionViewFlowLayout.swift */,
+				7343D9D090BE25C2DFC679E38221CC9D /* LavenderUserDefaults.swift */,
+				F435FB370CA9514A702A1A5896E439E6 /* LavenderUtil.swift */,
+				871E9E7AE37E071DCC2E1C3A24BF4F71 /* AuthModule */,
+				4F2FD6C76D9E543FABAC29D1C9AAB452 /* Button */,
+				CC6AD2A164B5AE47A86141D199936388 /* ImagePickerController */,
+				09E1650B5BB064CA726D5972DC80A9EF /* Locale */,
+				EFEC0DCF953A78198A2C15200E341B88 /* NavigationTransitionCenter */,
+				73BA8FFEB5C7398AA78315DE7C17B96E /* Pod */,
+				FD9CAF5A4BD0FCF1BA708BB632FBA06E /* Resources */,
+				510D49A2745E589B63692482F95EFE57 /* Support Files */,
+				7E70804843E0590A15F12F207DC55AF4 /* UpYun */,
 			);
 			name = Lavender;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		44C7DAAA92DBF561206E54A4E300BCBF /* UpYunSDK */ = {
+			isa = PBXGroup;
+			children = (
+				7DA4D7792F853DC1EF4834C3C4656904 /* UpApiUtils.h */,
+				72917F5E5759F53118B6187E9A81E691 /* UpApiUtils.m */,
+				AA760757700BBACB82F41A38FECD68AB /* UpSimpleHttpClient.h */,
+				18704D18DBE214948139F9E6BE2EBA97 /* UpSimpleHttpClient.m */,
+				F93B8AB66E4769EB7103058CABEED16E /* UpYunBlockUpLoader.h */,
+				4F5E67078FF94EE15C53BFAD0FF56123 /* UpYunBlockUpLoader.m */,
+				5E6BA4C79CD5F88018E5247B9F75C131 /* UpYunFileDealManger.h */,
+				CC46D6100C25C6628A8BD8077330EDA8 /* UpYunFileDealManger.m */,
+				F67812CFAE0AB3DC3FE055FCD5ABD9AC /* UpYunFormUploader.h */,
+				23627AA65B65D438A036301B8717EC7B /* UpYunFormUploader.m */,
+				64F032BDEEB2C8C710B6EEA1D2A4E023 /* UpYunUploader.h */,
+			);
+			name = UpYunSDK;
+			path = UpYunSDK;
+			sourceTree = "<group>";
+		};
+		4F2FD6C76D9E543FABAC29D1C9AAB452 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				83FE18DEC08A4F0B83EC935953D8E526 /* LianzaiButton.swift */,
+				91D108F371082508918CBD6DE625F7D1 /* LianzaiButton.xib */,
+			);
+			name = Button;
+			path = Lavender/Classes/Button;
+			sourceTree = "<group>";
+		};
+		510D49A2745E589B63692482F95EFE57 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				51A62571C160EC007DA07E4D31DF9DE4 /* Info.plist */,
+				DBB03C0E74859BE2C4F5B22F9DB6F098 /* Lavender.modulemap */,
+				106E641EF3E38649DCAA8BD10FEF8313 /* Lavender.xcconfig */,
+				05BED1D1AD7244E4B27FE0C385DBE0F0 /* Lavender-dummy.m */,
+				C4DC9CF971862FC0458C5DDDDB7A5685 /* Lavender-prefix.pch */,
+				286EDD7E8B099258A02D15CB1452908C /* Lavender-umbrella.h */,
+				478E274E55A3BFAC19695F98C73FBF85 /* ResourceBundle-com.xiaoxiangyeyu.haycinth.Lavender-Info.plist */,
+			);
+			name = "Support Files";
+			path = "LavenderExample/Pods/Target Support Files/Lavender";
 			sourceTree = "<group>";
 		};
 		5194B9419988C3709848195BC2968AA0 /* Products */ = {
@@ -296,78 +320,54 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5672AA908AD3BB53D7931A30F6AD56CE /* AuthModule */ = {
+		73BA8FFEB5C7398AA78315DE7C17B96E /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				B28072BF7AAAA4879C3E60B5A389983C /* LavenderAuthBaseViewController.swift */,
-				978CBA71040D95DC944B118446B87C5B /* LavenderAuthHomeViewController.swift */,
-				C77392FC70503D0B5D7C05567D7323F6 /* LavenderAuthUserViewController.swift */,
+				47906A5727F8655E116F303987947CA9 /* Lavender.podspec */,
+				A3FBB646CF56F96F0D2426A424230CE3 /* LICENSE */,
+				B826E9410AB42A64E1C88D04E3347097 /* README.md */,
 			);
-			name = AuthModule;
-			path = Lavender/Classes/AuthModule;
-			sourceTree = "<group>";
-		};
-		623CEA12A4D93D8269D605EA38B7F471 /* UpYunSDK */ = {
-			isa = PBXGroup;
-			children = (
-				C99CB959700C578A9D80DF3B86069234 /* UpApiUtils.h */,
-				1A8847C06EA08C833E4824947A1DA202 /* UpApiUtils.m */,
-				FCF2AD2C7898DE843B89A41B5304BE88 /* UpSimpleHttpClient.h */,
-				B4338C278F39B16F639FAFD5F6FC28EE /* UpSimpleHttpClient.m */,
-				7C3C8E7ECF11C3ADB06DDE1E94928042 /* UpYunBlockUpLoader.h */,
-				33A0024338E17E1CAB3F5CFDE78E1A3F /* UpYunBlockUpLoader.m */,
-				6072D440C1C7C9B0577BD6BA31D01985 /* UpYunFileDealManger.h */,
-				8276589BA2ACC4D9A2EEBAE54DE759C2 /* UpYunFileDealManger.m */,
-				074A1160105C45C7410B540846AC834C /* UpYunFormUploader.h */,
-				DDA675EAD3542DBC5D971721A669CC6D /* UpYunFormUploader.m */,
-				AB35512A4E6ECECBA7329A9431611D1D /* UpYunUploader.h */,
-			);
-			name = UpYunSDK;
-			path = UpYunSDK;
-			sourceTree = "<group>";
-		};
-		7B4547FC7107E3AE6FE1D43E1AADCA2F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				7E5FB7AE1A5BA365EAC965D3F17ECA71 /* Countries.bundle */,
-				AFC59FE756935812F5F05F8259F9D1AC /* ImagePicker.xcassets */,
-				89B6F6AC7A2667A7890E5D50317EFCA2 /* Images.xcassets */,
-				3DD5F3CC11C4A148CACC0B837883155A /* test.jpg */,
-			);
-			name = Resources;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				144DBA7704DC4469F85C45A796612773 /* Development Pods */,
+				94B65CED6C3B147223F67D4CBE5EA5A5 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				5194B9419988C3709848195BC2968AA0 /* Products */,
 				24CF8820565226DB2498E97943988063 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A4847E8A862DE1FCB4EF5457F360115D /* Locale */ = {
+		7E70804843E0590A15F12F207DC55AF4 /* UpYun */ = {
 			isa = PBXGroup;
 			children = (
-				D1B7840F51017C374212E0727C451596 /* LavenderCountryTableViewCell.swift */,
-				93045EF8759034EAF2A84FF1D293F9C5 /* LavenderLocaleInfo.swift */,
-				C440D0C0593B60736D883CFC9F2C9C17 /* LavenderLocalePickerViewController.swift */,
-				CD7456F047112BE761FAEB213FDB0ED9 /* LavenderLocaleStore.swift */,
+				B7DDD486693BE07DA2A7340DBA8C0437 /* LavenderUpYun.swift */,
+				44C7DAAA92DBF561206E54A4E300BCBF /* UpYunSDK */,
 			);
-			name = Locale;
-			path = Lavender/Classes/Locale;
+			name = UpYun;
+			path = Lavender/Classes/UpYun;
 			sourceTree = "<group>";
 		};
-		A95FD9F45DF0EAB691100D96B1B92D37 /* Button */ = {
+		871E9E7AE37E071DCC2E1C3A24BF4F71 /* AuthModule */ = {
 			isa = PBXGroup;
 			children = (
-				6C6763D556B49B4690F7B4399E2CE317 /* LianzaiButton.swift */,
-				B2D93C564430638145D52CB41EDA5702 /* LianzaiButton.xib */,
+				71AE6E3D3D488B8245B563AB3EC0F54A /* LavenderAuthBaseViewController.swift */,
+				84E52CC377BD9E141B6CC47FBF962B29 /* LavenderAuthHomeViewController.swift */,
+				932565C3987369B6C6F8B68797EEC5A9 /* LavenderAuthUserViewController.swift */,
 			);
-			name = Button;
-			path = Lavender/Classes/Button;
+			name = AuthModule;
+			path = Lavender/Classes/AuthModule;
+			sourceTree = "<group>";
+		};
+		94B65CED6C3B147223F67D4CBE5EA5A5 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				396ADD5039032322652A6193E6E671EA /* Lavender */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -378,45 +378,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C9531FED9B1A57F6DA6106FF9F3C587A /* Support Files */ = {
+		CC6AD2A164B5AE47A86141D199936388 /* ImagePickerController */ = {
 			isa = PBXGroup;
 			children = (
-				5923AEE35A41BF499A5E136B30FD3A81 /* Info.plist */,
-				AF945F3B243D9E39101CCC138FFE14A8 /* Lavender.modulemap */,
-				6C51CA1B76F04916224EA7CADB3B93BB /* Lavender.xcconfig */,
-				61F99FF598190FE90265DA815318AF86 /* Lavender-dummy.m */,
-				09079CAE4A1DF84291A5964768A78B45 /* Lavender-prefix.pch */,
-				0F23FDC9F43862639504B77DB055B8EF /* Lavender-umbrella.h */,
-				69D083659F4EED7918F9BA6EA01B0E83 /* ResourceBundle-com.xiaoxiangyeyu.haycinth.Lavender-Info.plist */,
+				F272509A2A119DE169AB40BA3EE185FD /* LavenderImageManager.swift */,
+				2893B6F8B1E042E458740BA03C6E7DCD /* LavenderImagePickerAlbumCell.swift */,
+				96F7B5B0A1875A77D4F8155C324A0D14 /* LavenderImagePickerAlbumViewController.swift */,
+				B6FEC00D97585701593943EF6E702D7B /* LavenderImagePickerCameraViewController.swift */,
+				BD5DB68977936566BCAA33D21B796D42 /* LavenderImagePickerController.swift */,
+				955B456EA96693410796B3CFD66FE2D7 /* LavenderImagePickerModel.swift */,
+				7F0BA62D94A56FB1F52A53213F5CC07F /* LavenderImagePickerPreviewCell.swift */,
+				ACB41D60F1B684674CC958358B6DE71D /* LavenderImagePickerPreviewLayout.swift */,
+				96043166F25572770E66595048F3D8F3 /* LavenderImagePickerPreviewViewController.swift */,
+				F15F2CB2A21A00810950570A64E4C106 /* LavenderImagePickerResource.swift */,
+				57FE6E6EBE3E22A42902F4294A08EED5 /* LavenderImagePickerThumbnailCell.swift */,
+				7CEB63C18BA83E16F14300D8E833DBEA /* LavenderImagePickerThumbnailToolbar.swift */,
+				970531ED5365A95287407F9E75DA4FD2 /* LavenderImagePickerThumbnailViewController.swift */,
 			);
-			name = "Support Files";
-			path = "LavenderExample/Pods/Target Support Files/Lavender";
-			sourceTree = "<group>";
-		};
-		CBE915A090FA8A669B9A6176C606C42A /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				99601DAA7C4D25F2EF3233D404EF687D /* Lavender.podspec */,
-				911ED9A5382B93E922B44BD5E4624D46 /* LICENSE */,
-				351A880DA51A5173817129DB44977737 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		CD2ADA7C06F97DAFFC39E38840D8E394 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				07D152A092D8B71B8562755F9EF3048A /* Lavender+String.swift */,
-				F4E5773408E9BF56DB78C740431240C6 /* Lavender+UIButton.swift */,
-				711B0E4831A07A4A1C86CCF02C70AFA6 /* Lavender+UIColor.swift */,
-				5D35ACF56E0F21668AB8ED067258BF84 /* Lavender+UIImage.swift */,
-				973430C2715392BFE7D93D07B24E4E6D /* Lavender+UIImageView.swift */,
-				2A3B7C2A0FCE3A6D36EB705470A282BA /* Lavender+UITableView.swift */,
-				13685D2434B38AC239A83AFB82E76BA8 /* Lavender+UITableViewCell.swift */,
-				568E26366E3476CA5E28C65AF4407AC1 /* Lavender+UIView.swift */,
-			);
-			name = Extension;
-			path = Lavender/Classes/Extension;
+			name = ImagePickerController;
+			path = Lavender/Classes/ImagePickerController;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -425,6 +405,26 @@
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		EFEC0DCF953A78198A2C15200E341B88 /* NavigationTransitionCenter */ = {
+			isa = PBXGroup;
+			children = (
+				95D0CFDDA37E4F67929C5C178D277151 /* LavenderNavigationTransitionCenter.swift */,
+			);
+			name = NavigationTransitionCenter;
+			path = Lavender/Classes/NavigationTransitionCenter;
+			sourceTree = "<group>";
+		};
+		FD9CAF5A4BD0FCF1BA708BB632FBA06E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BD18044995194D66F1EB056BE9D31D02 /* Countries.bundle */,
+				1713A9909A32E085232D2C7C67B8A005 /* ImagePicker.xcassets */,
+				51C4923F652B7D29D118C1EA2C8E1295 /* Images.xcassets */,
+				22E69A20B42BD082F62752A99E74180A /* test.jpg */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -438,17 +438,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B3DBD50CC06310D39AB6F2514DDD59E5 /* Headers */ = {
+		6947DCC28905F3262A40FBA335BEFA5E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B73FAB18D197D7AC645114305CC1A2D /* Lavender-umbrella.h in Headers */,
-				082C4B345083E67A99F2B75B968FE0EF /* UpApiUtils.h in Headers */,
-				23CFE78E25CBFDBD1E4C3BF819D70868 /* UpSimpleHttpClient.h in Headers */,
-				CCDE1A8829B598F10F1374B4118DCE80 /* UpYunBlockUpLoader.h in Headers */,
-				F0004BB7BC4420762956CF636F83F7C7 /* UpYunFileDealManger.h in Headers */,
-				5ECE520463F83F99492345702AE207F9 /* UpYunFormUploader.h in Headers */,
-				5C879ED37CE9F1A22E6D46352C16F9D5 /* UpYunUploader.h in Headers */,
+				84DAB0E5E55E2DDE8073CBACD308CBD5 /* Lavender-umbrella.h in Headers */,
+				D45F92C03BFA393A9E484C5E22F29369 /* UpApiUtils.h in Headers */,
+				240A0E9242DD8FAD839977129820CDB0 /* UpSimpleHttpClient.h in Headers */,
+				C4F2A063F9A1BA2847608CB633C7A5D4 /* UpYunBlockUpLoader.h in Headers */,
+				5757AA95D496576A08845E56B339B4D6 /* UpYunFileDealManger.h in Headers */,
+				BCA6B9F6E16B4BBB1D0EF5919B084FA5 /* UpYunFormUploader.h in Headers */,
+				64E5745A1697BA0F787455EEB76B8427 /* UpYunUploader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,13 +473,13 @@
 			productReference = D395457FE2E6D8A8587A47DF7F54A717 /* Pods_LavenderExample.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		63EB1E253876F7DF987233F2881DF25C /* Lavender-com.xiaoxiangyeyu.haycinth.Lavender */ = {
+		CA858A46B4EE4E136B9BBEB06ADD5DE6 /* Lavender-com.xiaoxiangyeyu.haycinth.Lavender */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC46ECC505105A059EA789E54CCD728A /* Build configuration list for PBXNativeTarget "Lavender-com.xiaoxiangyeyu.haycinth.Lavender" */;
+			buildConfigurationList = 39A993C7E1089A23C05CE95FC7457168 /* Build configuration list for PBXNativeTarget "Lavender-com.xiaoxiangyeyu.haycinth.Lavender" */;
 			buildPhases = (
-				849ED626442710BE42E0605D7093EE32 /* Sources */,
-				D063C396DB58556BF37FBD03AD2969FB /* Frameworks */,
-				BE896D3BD7F8E4257E330F61481D83B8 /* Resources */,
+				D3BF5F9E4AAED4AE099859AFC6A6000E /* Sources */,
+				DBFB0ACED86D9A98B46E436998F52074 /* Frameworks */,
+				EFCAF8320CBCFDC9A69C1A0CB763DE22 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -490,19 +490,19 @@
 			productReference = CCF26AE333715B8ADE844CD6DA82B763 /* com.xiaoxiangyeyu.haycinth.Lavender.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		9950F6ECF338BC9AFD3525FEE57FAA2D /* Lavender */ = {
+		D7A153090B42ED6CA4884F21C389C251 /* Lavender */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A8522AEEF3E3CBEFE1123D9A4D65C092 /* Build configuration list for PBXNativeTarget "Lavender" */;
+			buildConfigurationList = FAAAED677A0D0585F51DDA9F1E1A4390 /* Build configuration list for PBXNativeTarget "Lavender" */;
 			buildPhases = (
-				C3D20187EA4FAC1DA27E66233577069A /* Sources */,
-				4C5A120AE98BBAF8A22D6C4404842C2A /* Frameworks */,
-				65D9858A8B6DF335860777660E030AE8 /* Resources */,
-				B3DBD50CC06310D39AB6F2514DDD59E5 /* Headers */,
+				15AC36ECAC907BE8CE265295B7AE8F5E /* Sources */,
+				73EA3DCF3594240B9148B8408C9ABD12 /* Frameworks */,
+				E9FD3198F3246AECEAF31BCDB7F7148C /* Resources */,
+				6947DCC28905F3262A40FBA335BEFA5E /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				35B6D093A99385A3DCE5030AAC80D8EC /* PBXTargetDependency */,
+				5F826C604B10EACF8F1E42015ACE2E0C /* PBXTargetDependency */,
 			);
 			name = Lavender;
 			productName = Lavender;
@@ -530,36 +530,88 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9950F6ECF338BC9AFD3525FEE57FAA2D /* Lavender */,
-				63EB1E253876F7DF987233F2881DF25C /* Lavender-com.xiaoxiangyeyu.haycinth.Lavender */,
+				D7A153090B42ED6CA4884F21C389C251 /* Lavender */,
+				CA858A46B4EE4E136B9BBEB06ADD5DE6 /* Lavender-com.xiaoxiangyeyu.haycinth.Lavender */,
 				105B43C569A2055B05F5807179D09280 /* Pods-LavenderExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		65D9858A8B6DF335860777660E030AE8 /* Resources */ = {
+		E9FD3198F3246AECEAF31BCDB7F7148C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10AFE7E06390FCC23F65D1791DC17129 /* com.xiaoxiangyeyu.haycinth.Lavender.bundle in Resources */,
+				A584F49CF1D7CEA051C2A4042FF700AA /* com.xiaoxiangyeyu.haycinth.Lavender.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE896D3BD7F8E4257E330F61481D83B8 /* Resources */ = {
+		EFCAF8320CBCFDC9A69C1A0CB763DE22 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C5DD62A55D122DD8089000FB98092BC /* Countries.bundle in Resources */,
-				512451F17F409DFC3344100C3803ED2A /* ImagePicker.xcassets in Resources */,
-				ADA880668251F5A192D6C52D860D9564 /* Images.xcassets in Resources */,
-				6D66027F0E6BFA0D10F501FCB27D7759 /* test.jpg in Resources */,
+				1DC27251CFDCA3D753277B4358FCFAD0 /* Countries.bundle in Resources */,
+				15B3EA8114E349C94619437930FAEACD /* ImagePicker.xcassets in Resources */,
+				60ED1293867A8C72B9D7D471A8CC1ACB /* Images.xcassets in Resources */,
+				051DC1B9DF3DFCEAE38B8643BAD5F869 /* test.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		15AC36ECAC907BE8CE265295B7AE8F5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA07AF62520BC9C774E120411014A862 /* Lavender+Dequeue.swift in Sources */,
+				B1A3417A341F359F5C1A4BFFB1519449 /* Lavender+FileManager.swift in Sources */,
+				F4554FC9CAF9F8406CC6E3025E42BC10 /* Lavender+String.swift in Sources */,
+				E7C9403C98C221174AF4624FFF04E40E /* Lavender+UIButton.swift in Sources */,
+				F104FA5309247B144069E2284B765773 /* Lavender+UIColor.swift in Sources */,
+				3C6A19174AAFD43E7366F6C7035F3CB3 /* Lavender+UIImage.swift in Sources */,
+				4F3180676133BBEC48D733D0201F9893 /* Lavender+UIImageView.swift in Sources */,
+				AE994024ED704FC1834ADA28573E9676 /* Lavender+UITableView.swift in Sources */,
+				9C9E42927209FF3746C3F22F5C852930 /* Lavender+UITableViewCell.swift in Sources */,
+				127EFD3270D311A67DF4DF06E3AD162E /* Lavender+UIView.swift in Sources */,
+				463B16CA66846B302AF3FF073CD51124 /* Lavender-dummy.m in Sources */,
+				48717C22E87509C1F08739D38CE01E83 /* Lavender.swift in Sources */,
+				CF115A40E359150BB2DC36D3F8D73BAD /* LavenderAuthBaseViewController.swift in Sources */,
+				EDB9D7163DEF58FF1411F908B943BF1E /* LavenderAuthHomeViewController.swift in Sources */,
+				EE65120DF3721E51B883BC2C454F60D2 /* LavenderAuthUserViewController.swift in Sources */,
+				65AB251A13B0A489098A4BBA7920EF02 /* LavenderConst.swift in Sources */,
+				DF74F4D78445CEDC9721D6E084709D04 /* LavenderCountryTableViewCell.swift in Sources */,
+				280F96E31136DD3C0AE16CE53D1A5600 /* LavenderImageManager.swift in Sources */,
+				F6DAB2DBB4B1FC635DD815E2CDC859E6 /* LavenderImagePickerAlbumCell.swift in Sources */,
+				C415E35308A78E803118528800A939BE /* LavenderImagePickerAlbumViewController.swift in Sources */,
+				D8C41D6785D845667A7971360FD11DFB /* LavenderImagePickerCameraViewController.swift in Sources */,
+				64036966A40CF86AA1D3A5EF431385E7 /* LavenderImagePickerController.swift in Sources */,
+				8CEADA7E1776F72DBE59F2377E1618CA /* LavenderImagePickerModel.swift in Sources */,
+				8EBB69EA93459BFE495A540017BB36DF /* LavenderImagePickerPreviewCell.swift in Sources */,
+				518900C231F37B38CADF072ED9F75D90 /* LavenderImagePickerPreviewLayout.swift in Sources */,
+				5664048B420E48E31575FA05763B10F1 /* LavenderImagePickerPreviewViewController.swift in Sources */,
+				CBED473B7AB8DBF5A0AECF55527CDA37 /* LavenderImagePickerResource.swift in Sources */,
+				57EFF853F81C8E0FDD26601A4D0C1A25 /* LavenderImagePickerThumbnailCell.swift in Sources */,
+				476BAD78ACE72F5899F7D9F7FDE7BEC8 /* LavenderImagePickerThumbnailToolbar.swift in Sources */,
+				1E4075268C16A2FA2763CDC55BCDAA4A /* LavenderImagePickerThumbnailViewController.swift in Sources */,
+				A3FE273B70B6FA70297BC284028BAC6F /* LavenderLeftAlignCollectionViewFlowLayout.swift in Sources */,
+				EF64BBCFC24518DA8A5FE421A7614D59 /* LavenderLocaleInfo.swift in Sources */,
+				065E44B6C75F221ADB24367265EC6CF1 /* LavenderLocalePickerViewController.swift in Sources */,
+				557778EA6B2A91341816CFC10B6039B8 /* LavenderLocaleStore.swift in Sources */,
+				E0CC9BF7F0A906F13CCE58CEB82A75F2 /* LavenderNavigationTransitionCenter.swift in Sources */,
+				190CDF9725B56F9B3EF1B1F85B45A1EE /* LavenderUpYun.swift in Sources */,
+				E04EF697F96E9BE7826AF2DD8AAE14C5 /* LavenderUserDefaults.swift in Sources */,
+				BF47CF21EB62709C21B5D28CDA59C952 /* LavenderUtil.swift in Sources */,
+				4B1773AF23ECA794FABF1235377FAE42 /* LianzaiButton.swift in Sources */,
+				BE4DA6A9D58BC2A7B22FEBE7F21E1BD5 /* LianzaiButton.xib in Sources */,
+				7980A7834B23E7D17DEE147DD4E37D3C /* UpApiUtils.m in Sources */,
+				45FA6ECB1624FEF08498516BB5F85DF1 /* UpSimpleHttpClient.m in Sources */,
+				4F6F974512B54E49D60C7D29573A51EB /* UpYunBlockUpLoader.m in Sources */,
+				FADD25C178E641A180DC932C37DD8002 /* UpYunFileDealManger.m in Sources */,
+				8AFCF47C4ECCDAA57EBBC9081A41E4F2 /* UpYunFormUploader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CE9720BB47C53FF04B55C5D1CA0E8A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -568,80 +620,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		849ED626442710BE42E0605D7093EE32 /* Sources */ = {
+		D3BF5F9E4AAED4AE099859AFC6A6000E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C3D20187EA4FAC1DA27E66233577069A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				30A28A96BEA7CD2F99CB3768AD7E9AB8 /* Lavender+String.swift in Sources */,
-				535D7268402EFE83AE0FA208B107D402 /* Lavender+UIButton.swift in Sources */,
-				9770107DEF990CCD37E71B926E7C055B /* Lavender+UIColor.swift in Sources */,
-				BD76A3267D98CA6895B649975CFC374E /* Lavender+UIImage.swift in Sources */,
-				C14863AD2D41C0EF9F6DAF5657D132CB /* Lavender+UIImageView.swift in Sources */,
-				DE9A7212268641EF524643EBDEBDA7E4 /* Lavender+UITableView.swift in Sources */,
-				A8D0A318937CD1FC8D6AA62602AE1E53 /* Lavender+UITableViewCell.swift in Sources */,
-				8A31A6568463EFFBD270EF2E3E1D1BC1 /* Lavender+UIView.swift in Sources */,
-				2730A1D2FA09478720B16E65353B069F /* Lavender-dummy.m in Sources */,
-				D9C83EE47475E405941020F61EFDC8A6 /* Lavender.swift in Sources */,
-				664393CDB8DA4CADB6EEDA89E5914340 /* LavenderAuthBaseViewController.swift in Sources */,
-				475779D1D7F18B61B5724DCFC20ABE12 /* LavenderAuthHomeViewController.swift in Sources */,
-				E6AA9F5A47CD0E83A1571476F82DD601 /* LavenderAuthUserViewController.swift in Sources */,
-				51D308419FED1F0D3F07843C45878514 /* LavenderBundle.swift in Sources */,
-				BE34D3F7855F6B97389E6A9AE3F3CA8F /* LavenderConst.swift in Sources */,
-				ED1F1EEC8E36FEB5DA458036918A5FD9 /* LavenderCountryTableViewCell.swift in Sources */,
-				3E8F768FFAF1C3E78DB2F800657C2DDA /* LavenderImageManager.swift in Sources */,
-				DD2F5614DFA71499EDAB6910292A4EFB /* LavenderImagePickerAlbumCell.swift in Sources */,
-				26581965C342110EFB15005A9247ABCA /* LavenderImagePickerAlbumViewController.swift in Sources */,
-				09D80A426A1095C694D920BA3FC7BC94 /* LavenderImagePickerCameraViewController.swift in Sources */,
-				53A6780BE7A39BE8E75B91BDECDD22A7 /* LavenderImagePickerController.swift in Sources */,
-				EE4224C61F2F7FA96F21F4027D3320F5 /* LavenderImagePickerModel.swift in Sources */,
-				2E4D1EA8641F46ECE5B136603D751787 /* LavenderImagePickerPreviewCell.swift in Sources */,
-				8D89E25089E504FCBB5A4F8390548BB0 /* LavenderImagePickerPreviewLayout.swift in Sources */,
-				E073647D433896D7C13172F87AFB101D /* LavenderImagePickerPreviewViewController.swift in Sources */,
-				2D7571B4320E5968CFD5168586B4AD7D /* LavenderImagePickerResource.swift in Sources */,
-				8167F6FCD7B554B459FC1104B5609E7F /* LavenderImagePickerThumbnailCell.swift in Sources */,
-				0A769D32DE462BA2F21E1BC4F98D1211 /* LavenderImagePickerThumbnailToolbar.swift in Sources */,
-				6214DB9089A48464590AA6039B752415 /* LavenderImagePickerThumbnailViewController.swift in Sources */,
-				F162E10038A6483B1BCBCFDCB120CD8C /* LavenderLocaleInfo.swift in Sources */,
-				1E8DE172D6E91557C6B9F4CE1C2CCD2E /* LavenderLocalePickerViewController.swift in Sources */,
-				374583BF388BC7AAA9E45464EA81240D /* LavenderLocaleStore.swift in Sources */,
-				22BCF0447F0875A800E8730A59444B0A /* LavenderNavigationTransitionCenter.swift in Sources */,
-				40B9C4CBE446279B81CC30AB7B32BFAB /* LavenderUpYun.swift in Sources */,
-				E16655FC84ED23D7E6FA468AD6E0C2A4 /* LavenderUtil.swift in Sources */,
-				E1D3C97AD9B45EDE84E53ADC579B83FB /* LianzaiButton.swift in Sources */,
-				848BD485BAC26683C70EA82FA9801577 /* LianzaiButton.xib in Sources */,
-				7A52E2ABC6E5E539DA3163B6F705D88A /* UpApiUtils.m in Sources */,
-				F34B1A5B7B81238FE22F690733822CA8 /* UpSimpleHttpClient.m in Sources */,
-				E11F6AE322D7E258258B4FCF03A26DA0 /* UpYunBlockUpLoader.m in Sources */,
-				167B426D2D5674C8CDA7AAEC903833F6 /* UpYunFileDealManger.m in Sources */,
-				EC5B20AB89283E6CB4DBA6DA7F60FE24 /* UpYunFormUploader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		35B6D093A99385A3DCE5030AAC80D8EC /* PBXTargetDependency */ = {
+		5F826C604B10EACF8F1E42015ACE2E0C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Lavender-com.xiaoxiangyeyu.haycinth.Lavender";
-			target = 63EB1E253876F7DF987233F2881DF25C /* Lavender-com.xiaoxiangyeyu.haycinth.Lavender */;
-			targetProxy = 60AA2AE2E752A1555BEFAED842CD208A /* PBXContainerItemProxy */;
+			target = CA858A46B4EE4E136B9BBEB06ADD5DE6 /* Lavender-com.xiaoxiangyeyu.haycinth.Lavender */;
+			targetProxy = 907FEA7A6D925DC0BE2C2FFF68EA2F2A /* PBXContainerItemProxy */;
 		};
 		98EFA66A0A3BCB89BF7A02FADA3B4AAF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Lavender;
-			target = 9950F6ECF338BC9AFD3525FEE57FAA2D /* Lavender */;
+			target = D7A153090B42ED6CA4884F21C389C251 /* Lavender */;
 			targetProxy = F9D3249583D9BDCD70C02321AC5D0C72 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		15353288AA43BDD4453FD28F974CCCEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 106E641EF3E38649DCAA8BD10FEF8313 /* Lavender.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Lavender";
+				INFOPLIST_FILE = "Target Support Files/Lavender/ResourceBundle-com.xiaoxiangyeyu.haycinth.Lavender-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = com.xiaoxiangyeyu.haycinth.Lavender;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -740,25 +759,9 @@
 			};
 			name = Release;
 		};
-		2EC692FB613664FA71F1B2A6294C4E55 /* Debug */ = {
+		5C2F3EA61349D49687EB670E60EF95E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C51CA1B76F04916224EA7CADB3B93BB /* Lavender.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Lavender";
-				INFOPLIST_FILE = "Target Support Files/Lavender/ResourceBundle-com.xiaoxiangyeyu.haycinth.Lavender-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = com.xiaoxiangyeyu.haycinth.Lavender;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		6A59F0B4E6DB288C357EC1684F86721D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C51CA1B76F04916224EA7CADB3B93BB /* Lavender.xcconfig */;
+			baseConfigurationReference = 106E641EF3E38649DCAA8BD10FEF8313 /* Lavender.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -780,30 +783,13 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
-		};
-		79ACFC12212C0387F36EF74E5974B2C3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C51CA1B76F04916224EA7CADB3B93BB /* Lavender.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Lavender";
-				INFOPLIST_FILE = "Target Support Files/Lavender/ResourceBundle-com.xiaoxiangyeyu.haycinth.Lavender-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = com.xiaoxiangyeyu.haycinth.Lavender;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
+			name = Debug;
 		};
 		81E718CB18B1070E366112214BD8BBC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -840,9 +826,9 @@
 			};
 			name = Debug;
 		};
-		A7A1913D65BCC52E5A8A8E974A601CB9 /* Debug */ = {
+		DAE74B3F2A5E6275237078D0A1403469 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C51CA1B76F04916224EA7CADB3B93BB /* Lavender.xcconfig */;
+			baseConfigurationReference = 106E641EF3E38649DCAA8BD10FEF8313 /* Lavender.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -864,13 +850,30 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
+		};
+		E845331E7D9E0A9C0ADD460258FFCCFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 106E641EF3E38649DCAA8BD10FEF8313 /* Lavender.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Lavender";
+				INFOPLIST_FILE = "Target Support Files/Lavender/ResourceBundle-com.xiaoxiangyeyu.haycinth.Lavender-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = com.xiaoxiangyeyu.haycinth.Lavender;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
 		};
 		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -942,6 +945,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		39A993C7E1089A23C05CE95FC7457168 /* Build configuration list for PBXNativeTarget "Lavender-com.xiaoxiangyeyu.haycinth.Lavender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15353288AA43BDD4453FD28F974CCCEE /* Debug */,
+				E845331E7D9E0A9C0ADD460258FFCCFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7DE0B865945F88298AB9168B059480F3 /* Build configuration list for PBXNativeTarget "Pods-LavenderExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -951,20 +963,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A8522AEEF3E3CBEFE1123D9A4D65C092 /* Build configuration list for PBXNativeTarget "Lavender" */ = {
+		FAAAED677A0D0585F51DDA9F1E1A4390 /* Build configuration list for PBXNativeTarget "Lavender" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7A1913D65BCC52E5A8A8E974A601CB9 /* Debug */,
-				6A59F0B4E6DB288C357EC1684F86721D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EC46ECC505105A059EA789E54CCD728A /* Build configuration list for PBXNativeTarget "Lavender-com.xiaoxiangyeyu.haycinth.Lavender" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2EC692FB613664FA71F1B2A6294C4E55 /* Debug */,
-				79ACFC12212C0387F36EF74E5974B2C3 /* Release */,
+				5C2F3EA61349D49687EB670E60EF95E2 /* Debug */,
+				DAE74B3F2A5E6275237078D0A1403469 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

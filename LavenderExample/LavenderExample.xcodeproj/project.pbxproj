@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2085870420EB7F30001EFBC6 /* LVESimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085870320EB7F30001EFBC6 /* LVESimpleViewController.swift */; };
+		2085870620EC6149001EFBC6 /* LVEWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085870520EC6149001EFBC6 /* LVEWebViewController.swift */; };
 		20C0FC3F20C4F01F007E5483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C0FC3E20C4F01F007E5483 /* AppDelegate.swift */; };
 		20C0FC4820C4F020007E5483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C0FC4720C4F020007E5483 /* Assets.xcassets */; };
 		20C0FC6320C5151E007E5483 /* LVETabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C0FC6220C5151E007E5483 /* LVETabBarController.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2085870320EB7F30001EFBC6 /* LVESimpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVESimpleViewController.swift; sourceTree = "<group>"; };
+		2085870520EC6149001EFBC6 /* LVEWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVEWebViewController.swift; sourceTree = "<group>"; };
 		20C0FC3B20C4F01F007E5483 /* LavenderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LavenderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C0FC3E20C4F01F007E5483 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20C0FC4720C4F020007E5483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2085870220EB7EFC001EFBC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2085870320EB7F30001EFBC6 /* LVESimpleViewController.swift */,
+				2085870520EC6149001EFBC6 /* LVEWebViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		20C0FC3220C4F01F007E5483 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +96,7 @@
 		20C0FC3D20C4F01F007E5483 /* LavenderExample */ = {
 			isa = PBXGroup;
 			children = (
+				2085870220EB7EFC001EFBC6 /* View */,
 				20C0FC3E20C4F01F007E5483 /* AppDelegate.swift */,
 				20C0FC4C20C4F020007E5483 /* Info.plist */,
 				20C0FC6120C51503007E5483 /* Root */,
@@ -282,6 +296,8 @@
 				20C0FC7D20C51FEB007E5483 /* LVEAutoLayoutAnchorViewController.swift in Sources */,
 				20C0FCEE20C76B5E007E5483 /* LavenderUploadImageViewController.swift in Sources */,
 				20C0FC3F20C4F01F007E5483 /* AppDelegate.swift in Sources */,
+				2085870420EB7F30001EFBC6 /* LVESimpleViewController.swift in Sources */,
+				2085870620EC6149001EFBC6 /* LVEWebViewController.swift in Sources */,
 				20C0FC6F20C518AF007E5483 /* LVEAutoLayoutVLFViewController.swift in Sources */,
 				20C0FC6320C5151E007E5483 /* LVETabBarController.swift in Sources */,
 				20C0FC6920C515B9007E5483 /* LVEMainLoadingViewController.swift in Sources */,
