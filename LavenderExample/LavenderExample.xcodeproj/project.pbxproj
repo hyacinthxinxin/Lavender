@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20413AC32118341000B20C09 /* CountryCode.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20413AC22118340F00B20C09 /* CountryCode.plist */; };
 		2085870420EB7F30001EFBC6 /* LVESimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085870320EB7F30001EFBC6 /* LVESimpleViewController.swift */; };
 		2085870620EC6149001EFBC6 /* LVEWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085870520EC6149001EFBC6 /* LVEWebViewController.swift */; };
 		20C0FC3F20C4F01F007E5483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C0FC3E20C4F01F007E5483 /* AppDelegate.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20413AC22118340F00B20C09 /* CountryCode.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CountryCode.plist; sourceTree = "<group>"; };
 		2085870320EB7F30001EFBC6 /* LVESimpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVESimpleViewController.swift; sourceTree = "<group>"; };
 		2085870520EC6149001EFBC6 /* LVEWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVEWebViewController.swift; sourceTree = "<group>"; };
 		20C0FC3B20C4F01F007E5483 /* LavenderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LavenderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +98,7 @@
 		20C0FC3D20C4F01F007E5483 /* LavenderExample */ = {
 			isa = PBXGroup;
 			children = (
+				20413AC22118340F00B20C09 /* CountryCode.plist */,
 				2085870220EB7EFC001EFBC6 /* View */,
 				20C0FC3E20C4F01F007E5483 /* AppDelegate.swift */,
 				20C0FC4C20C4F020007E5483 /* Info.plist */,
@@ -243,6 +246,7 @@
 				20C0FC6520C51530007E5483 /* Root.storyboard in Resources */,
 				20C0FC6D20C516CF007E5483 /* LVECategory.storyboard in Resources */,
 				20C0FC7320C5198B007E5483 /* LVEAuthLayout.xcassets in Resources */,
+				20413AC32118341000B20C09 /* CountryCode.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +363,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -413,7 +417,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -431,7 +435,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9YE7FFAQ8S;
 				INFOPLIST_FILE = LavenderExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +456,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9YE7FFAQ8S;
 				INFOPLIST_FILE = LavenderExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
