@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class LianzaiButton: UIControl {
+open class LianzaiButton: UIControl {
 
     enum TouchAlphaValues : CGFloat {
         case touched = 0.7
@@ -291,7 +291,7 @@ public class LianzaiButton: UIControl {
         setupView()
     }
 
-    override public func layoutSubviews() {
+    override open func layoutSubviews() {
         if gradient != nil {
             gradient?.removeFromSuperlayer()
             gradient = nil
@@ -300,7 +300,7 @@ public class LianzaiButton: UIControl {
         setupBorderAndCorners()
     }
 
-    override public var intrinsicContentSize: CGSize {
+    override open var intrinsicContentSize: CGSize {
         return CGSize(width: 44, height: 44)
     }
 
@@ -476,11 +476,11 @@ public class LianzaiButton: UIControl {
         }
     }
 
-    override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+    override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
         pressed = true
     }
 
-    override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?){
+    override open func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?){
         let shouldSendActions = pressed
         pressed = false
         if shouldSendActions{
@@ -488,7 +488,7 @@ public class LianzaiButton: UIControl {
         }
     }
 
-    override public func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?){
+    override open func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?){
         if let touchLoc = touches.first?.location(in: self){
             if (touchLoc.x < -touchDisableRadius ||
                 touchLoc.y < -touchDisableRadius ||
@@ -502,7 +502,7 @@ public class LianzaiButton: UIControl {
         }
     }
 
-    override public func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override open func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         pressed = false
     }
 

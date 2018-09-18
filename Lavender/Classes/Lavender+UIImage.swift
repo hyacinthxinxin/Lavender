@@ -481,7 +481,7 @@ public extension UIImage {
 
      - Returns A new image
      */
-    func resize(toSize: CGSize, contentMode: UIImageContentMode = .scaleToFill) -> UIImage? {
+    public func resize(toSize: CGSize, contentMode: UIImageContentMode = .scaleToFill) -> UIImage? {
         let horizontalRatio = size.width / self.size.width;
         let verticalRatio = size.height / self.size.height;
         var ratio: CGFloat!
